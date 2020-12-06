@@ -1,23 +1,20 @@
+
 html {
-  color: #3e4649;
-    background-color: #3e4649;
-    padding: 0;
-    background-size: 20%;
-    background-position: left;
-    
+  background-color: #3e4649;
+  max-width: 900px;
+  margin: auto;
 }
 
 body {
-  padding: 50px;
-  position: absolute;
-  left: 25%;
-  right: 25% ;
   background-color: white;
   color: #3e4649;
   font-family: 'Montserrat', sans-serif;
-    
-    display: block;
-    margin: 0px auto;
+  position: relative;
+  width: 0 auto;
+  margin: 0 auto;
+  padding: 50px;
+  resize: both;
+  overflow: auto;
 }
 
 .head_subtitle {
@@ -26,32 +23,32 @@ body {
 
 }
 
-
+.topHeader{
+    text-align: center;
+}
 
 .myName {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 }
 
 
 .email, .linkedIn, .github{
-  font-size: 15px;
-  margin-top: -8px;
-  margin-bottom: 2px;
+    font-size: 15px;
+    margin-bottom: -2px;
+    text-align: center;
 }
 
 .lar, .lab {
   font-size: 20px;
   color: blueviolet;
-  margin-left: 270px;
-
 }
 
 a {
     text-align: center;
-    padding: auto;
+    padding: 0 auto;
     text-decoration: none;
   }
 
@@ -63,7 +60,7 @@ a:hover {
 
 .school, .company_name, .project_name{
   font-weight: bold;
-  font-size: 18px;
+  font-size: 18px;   
 }
 
 .job_tittle{
@@ -72,17 +69,21 @@ a:hover {
 }
 
 .work_year{
-  margin-left: 500px;
-  margin-top: -20px;
+    text-align: right;
+    margin-top: -25px;
   font-style: italic;
   text-decoration: underline;
+    padding-left: 30%;
+    font-size: 14px;
 }
 
 .school_year{
-  margin-left: 450px;
+  text-align: right;
   margin-top: -25px;
   font-style: italic;
   text-decoration: underline;
+    padding-left: 50%;
+    font-size: 14px;
 }
 
 span{
