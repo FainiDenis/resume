@@ -1,2 +1,2 @@
-# myResume
-Create resume page with HTML &amp; CSS 
+# Resume
+Created resume page with HTML &amp; CSS 
