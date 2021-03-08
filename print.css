@@ -1,4 +1,10 @@
-@page { 
-    size:210mm 297mm; 
-    margin: 0 auto;
+@media print {
+    body {
+        position:static;
+        width: 1000px;
+        font-size: 120%;
+        margin-top: -50px;
+    }
+
+    #nav, footer {display:none;}         
 }
