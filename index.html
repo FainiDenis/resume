@@ -5,42 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!--Icons CSS-->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
-    <!--Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     
-    <!--External CSS -->
-      <link href="style.css" rel="stylesheet" />
+    <!--External CSS-->
+    <link rel="stylesheet" href="./style.css" />
+    
+    <!--Print CSS-->
+    <link rel="stylesheet" href="./print.css" />
+      
+    <!--Internal CSS-->
+    <style>
+        .schoolYear {list-style-type: none;}     
+    </style>
 
-    <!--Print CSS -->
-    <link rel="stylesheet" href="print.css" type="text/css" media="print" />
-
-    <title>Denis's Resume</title>
+    <title>Denis Faini's Resume</title>
   </head>
   <body>
-    <div class="topHeader">
-        <div class="myName">Denis Faini</div>
-        <div class="email"><i class="lar la-envelope"></i><a target="_blank" href="mailto:dtf8841@rit.edu">dtf8841@rit.edu</a></div>
-        <div class="linkedIn"><i class="lab la-linkedin-in"></i><a target="_blank" href="https://www.linkedin.com/in/fainidenis/">www.linkedin.com/in/fainidenis/</a></div>
-        <div class="github"><i class="lab la-github"></i><a target="_blank" href="https://fainidenis.github.io/resume/">fainidenis.github.io/resume/</a></div>
+      
+      <!--
+      <div id="menu">
+      <ul id="nav">
+        <li class="menuList"><a href="./index.html">Resume</a></li>
+        <li class="menuList"><a href="./coverletter.html">Cover Letter</a></li>
+      </ul>
+  </div>
+    -->
+      
+    <div id="resumeHeader">
+        <div id="myName">Denis Faini</div>
+        <div id="jobPosition">IT Specialist | Web Developer</div>
+        
+        <div id="contactInfo">
+            <div class="contactList"><i class="lab la-github"></i><a target="_blank" href="https://fainidenis.github.io/resume/">fainidenis.github.io/resume/</a></div>
+            <div class="contactList"><i class="lar la-envelope"></i><a target="_blank" href="mailto:dtf8841@rit.edu">dtf8841@rit.edu</a></div>
+            <div class="contactList"><i class="lab la-linkedin-in"></i><a target="_blank" href="https://www.linkedin.com/in/fainidenis/">www.linkedin.com/in/fainidenis/</a></div>  
+        </div>
+        
     </div>
 
-    <div class="technicalSkill">
-        <div class="head_subtitle"><i class="las la-tools"></i> TECHNICAL SKILLS</div>
-        <hr>
-        <div class="list_skills">
+    <div id="objective">
+      <div class="headSubtitle"><i class="las la-link"></i> OBJECTIVE</div>
+        <hr />
+        <p>Senior year student at Rochester Institute of Technology, looking to join your organization's IT support team as an IT
+            specialist intern position. Seeking to leverage strong hardware and software skills gained through lab experience at the
+            college to ensure and achieve all of your organization goals.</p>
+      
+    </div>  
+    
+    <div id="technicalSkill">
+        <div class="headSubtitle"><i class="las la-tools"></i> TECHNICAL SKILLS</div>
+        <hr />
+        <div id="list_skills">
             <ul>
-                <li><span>Programming Languages: </span>HTML, CSS, Basic Java, C#</li>
                 <li><span>Technologies: </span>Wireshark, VMware, GNS3, OpenVPN, WireGuard, Cisco Packet Tracer, Basic Unix Commands, Networking, Apache, AWS, OMV5, Docker Portainer</li>
+                <li><span>Programming Languages: </span>HTML, CSS, Basic Java, C#</li>
             </ul>
         </div>
     </div>
 
-    <div class="certificate">
-        <i class="far fa-file-certificate"></i>
-        <div class="head_subtitle"><i class="las la-certificate"></i> CERTIFICATE</div>
-        <hr>
+    <div id="certificate">
+        <div class="headSubtitle"><i class="las la-certificate"></i>CERTIFICATE</div>
+        <hr />
         <div class="list_certifate">
             <ul>
                 <li>CompTIA: A + ID: <span class="certID"> COMP001021690206</span></li>
@@ -48,31 +73,30 @@
         </div>
     </div>
     
-    <div class="education">
-        <div class="head_subtitle"><i class="las la-graduation-cap"></i> EDUCATION</div>
-        <hr>
-        <div class="list_education">
-            <div class="school">Rochecter Institute of Technology</div>
+    <div id="education">
+        <div class="headSubtitle"><i class="las la-graduation-cap"></i> EDUCATION</div>
+        <hr />
+        <div id="schoolList">
+            <div id="schoolName">Rochecter Institute of Technology</div>
             <ul>
                 <li>BS. Computing Information and Technology</li>
-                <div class="school_year">August 2020 - December 2023</div>
+                <li class="schoolYear">August 2020 - December 2023</li>
                 <li>AAS. Applied Computing Technology</li>
-                <div class="school_year">January 2017 - August 2020</div>
+                <li class="schoolYear">January 2017 - August 2020</li>
             </ul>
-            <div class="dean_list">Dean’s List: Spring 2017, Fall 2018, Fall 2019, Spring 2020</div>
+            <div id="deanList">Dean’s List: Spring 2017, Fall 2018, Fall 2019, Spring 2020</div>
         </div>
     </div>
 
             
     
-     <div class="experience">
-         <br>
-         <div class="head_subtitle"><i class="las la-briefcase"></i> EXPERIENCE</div>
-         <hr>
-         <div class="company_name">Information Computing Studies, NTID/RIT</div>
-         <div class="job_tittle">Peer Tutor</div>
-         <div class="work_year">January 2020 - Current</div>
-         <div class="job_describition">
+     <div id="experience">
+         <div class="headSubtitle"><i class="las la-briefcase"></i> EXPERIENCE</div>
+         <hr />
+         <div class="companyName">Information Computing Studies, NTID/RIT</div>
+         <div class="jobTitle">Peer Tutor</div>
+         <div class="workYear">January 2020 - Current</div>
+         <div class="jobDescribition">
              <ul>
                 <li>Educate student on Study tips and exam strategies.</li>
                 <li>Collaborate with Students to complete their assignments, identify lagging skills and correct weakness.</li>
@@ -80,10 +104,10 @@
 			 </ul>
          </div>
 
-         <div class="company_name">Gracie's Dining Service, RIT</div>
-         <div class="job_tittle">Student Worker</div>
-         <div class="work_year">August 2017 - Novermber 2019</div>
-         <div class="job_describition">
+         <div class="companyName">Gracie's Dining Service, RIT</div>
+         <div class="jobTitle">Student Worker</div>
+         <div class="workYear">August 2017 - Novermber 2019</div>
+         <div class="jobDescribition">
              <ul>
                 <li>Checked dining area supplies, including linens and wrapped silverware, and refill low stock</li>
                 <li>Collected trash, wiped up spills and removed trays to maintain fresh and clean customer areas.</li>
@@ -91,10 +115,10 @@
             </ul>
         </div>
 
-        <div class="company_name">Facilities Management Service, RIT</div>
-         <div class="job_tittle">Student Custodian</div>
-         <div class="work_year">May 2019 - May 2019</div>
-         <div class="job_describition">
+        <div class="companyName">Facilities Management Service, RIT</div>
+         <div class="jobTitle">Student Custodian</div>
+         <div class="workYear">May 2019 - May 2019</div>
+         <div class="jobDescribition">
              <ul>
                  <li>Established and maintained clean and comfortable environments in college dormitory buildings by vacuuming, cleaning windows and dusting.</li>
                 <li>Collected, sorted and transported recyclable materials.</li>
@@ -103,11 +127,11 @@
         </div>
      </div>
 
-     <div class="projects">
-         <div class="head_subtitle"><i class="las la-folder-open"></i> PROJECTS</div>
-         <hr>
-         <div class="project_name">ACT Technical Capstone - NACT 295</div>
-         <div class="project_describition">
+     <div id="projects">
+         <div class="headSubtitle"><i class="las la-folder-open"></i> PROJECTS</div>
+         <hr />
+         <div class="projectName">ACT Technical Capstone - NACT 295</div>
+         <div class="projectDescribition">
             <ul>
                 <li><span>Genesee Waterways Center: </span>Installed camera/security system where they can check on their smartphone while inside and outside the center.</li>
                 <li><span>Lego Raspberry Pi Implementation: </span>Builded and updated car with Raspberry Pi that have to go forward, turn left or right.</li>
@@ -115,15 +139,20 @@
             </ul>
          </div>
 
-         <div class="project_name">Homelab</div>
-         <div class="project_describition">
+         <div class="projectName">Homelab</div>
+         <div class="projectDescribition">
              <ul>
                   <li><span>Pihole: </span>Use Docker container in Raspberry Pi as DNS server to block known advertisement domains.</li>
                 <li><span>Network Attached Storage: </span>Setup Open Media Vault (OMV) and external hard drive on Raspberry Pi connected to network that allow me to store and retrieve data.</li>
                 <li><span>External Access: </span>Setup VPN use OpenVPN or WireGuard which allow me to connect to my internal network safely while I’m outside home network.</li>
              </ul>
          </div>
-     </div>     
+     </div>
+      
+      <footer>
+      <p>&copy;Github 2021 &commat;<a href="mailto:dtf8841@rit.edu">Denis Faini</a></p>
+    </footer>
                     
   </body>
 </html>
+
