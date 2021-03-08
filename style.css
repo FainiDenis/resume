@@ -1,112 +1,163 @@
-
-html {
-  background-color: #3e4649;
-  max-width: 900px;
-  margin: auto;
+html{
+    background: linear-gradient(to right, #606c88, #3f4c6b);
+    color: inherit;
+    margin: auto;
+    padding: auto;
+    
 }
 
-body {
-  background-color: white;
-  color: #3e4649;
-  font-family: 'Montserrat', sans-serif;
-  position: relative;
-  width: 0 auto;
-  margin: 0 auto;
-  padding: 50px;
-  resize: both;
-  overflow: auto;
+ body {
+     margin: auto;
+     padding: 60px;
+     width: 800px;
+     height: 1450px;
+     background-color: white;
+     color: black;
+     background-color: #F7F8F8;
+     
 }
 
-.head_subtitle {
-  font-weight: bold;
-  font-size: 20px;
+#nav{
+    list-style-type:none;
+    overflow: hidden;
+    background-color:#606c88;
+    margin-bottom: 10px;
+    margin-top: -60px;
+    margin-left: -60px;
+    margin-right: -60px;
+    color: inherit;
+    font-size: 25px;
+    
 
 }
 
-.topHeader{
-    text-align: center;
+.menuList{
+    float: left;
+    
 }
 
-.myName {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: -10px;
-}
-
-
-.email, .linkedIn, .github{
-    font-size: 15px;
-    margin-bottom: -2px;
-    text-align: center;
-}
-
-.lar, .lab {
-  font-size: 20px;
-  color: blueviolet;
-}
-
-a {
-    text-align: center;
-    padding: 0 auto;
-    text-decoration: none;
-  }
-
-a:hover {
-    background-color: blueviolet;
+.menuList a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 15px 30px;
     text-decoration: none;
-  }
+}
 
-.school, .company_name, .project_name{
+.menuList a:hover{
+    background-color: #F7F8F8;
+    color:#606c88;
+}
+
+.headSubtitle{
+    color:#134E5E;
+    font-weight: bold;
+    background-color: inherit;
+}
+
+.la-envelope, .la-linkedin-in, .la-github{
+    color: #0396FF;
+    font-size: 130%;
+}
+
+.la-link, .la-graduation-cap, .la-briefcase, .la-tools, .la-certificate, .la-folder-open{
+    font-size: 140%;
+    color: #ff5e62;
+}
+
+#myName{
+    font-size: 50px;
+    color: #606c88;
+}
+
+#contactInfo{
+    float: right;
+    margin-top: -100px;
+    color: black;
+    background-color: inherit;
+}
+
+#contactInfo a{
+    margin-left: 10px;
+}
+
+.contactList a {
+    color: black;
+    text-align:center;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.contactList a:hover{
+    background-color: #e91e62;
+    color: white;
+}
+
+#jobPosition{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.headSubtitle{
+    font-size: 20px;
+}
+
+.schoolYear{
+    float: right;
+    margin-top: -20px;
+}
+
+#deanList{
+    margin-bottom: 20px;
+}
+
+.workYear{
+    float: right;
+    margin-top: -40px;
+}
+
+span, .companyName, .schoolName, .projectName{
+    font-weight: bold;
+}
+
+.jobTitle{
+    font-size: 17px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.shoolName, .experienceHobbies{
+   font-weight: bold;
+   font-size: 30px;
+}
+
+.schoolLocation{
+  font-size: 20px;
   font-weight: bold;
-  font-size: 18px;   
-}
-
-.job_tittle{
   font-style: italic;
-  font-size: 14px;
+  color: #1e62e9;
+  margin-bottom: 10px;
 }
 
-.work_year{
-    text-align: right;
-    margin-top: -25px;
-  font-style: italic;
-  text-decoration: underline;
-    padding-left: 30%;
-    font-size: 14px;
-}
-
-.school_year{
-  text-align: right;
-  margin-top: -25px;
-  font-style: italic;
-  text-decoration: underline;
-    padding-left: 50%;
-    font-size: 14px;
-}
-
-span{
+.degreeMajor, .skillRole{
   font-weight: bold;
+  font-size: 115%;
+  text-decoration: underline;
 }
 
-hr {
-  margin-top: -1px;
+footer {
+    margin: auto;
+      padding: 8px;
+      margin-top: 80px;
+      margin-left: -60px;
+      margin-right: -60px;
+      color: white;
+      text-align: center;
+      background: linear-gradient(to right, #606c88, #3f4c6b);
 }
 
-.education, .experience, .projects{
-  margin-top: -5px;
+footer a {
+    color: white;
+    
 }
-
-.certificate{
-  margin-top: -20px;
-}
-
-.las {
-  color: red;
-  font-size: 30px;
-}
-
-.las la-at, lab la-linkedin-in{
-  font-size: 12px;
-}
+footer a:hover {background-color: #e91e62; color: black}
