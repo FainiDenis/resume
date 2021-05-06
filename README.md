@@ -1,2 +1,2 @@
 # Resume
-Created resume page with HTML &amp; CSS 
+Used HTML &amp; CSS to create my resume. 
