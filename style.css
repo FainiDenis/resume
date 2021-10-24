@@ -118,6 +118,7 @@ html{
 
 span, .companyName, .schoolName, .projectName{
     font-weight: bold;
+    height: auto;
 }
 
 .jobTitle{
@@ -147,12 +148,14 @@ span, .companyName, .schoolName, .projectName{
 
 footer {
       margin: auto;
+      margin-top: 100px;
       padding: 10px;
       margin-left: -60px;
       margin-right: -60px;
       color: white;
       text-align: center;
       background: linear-gradient(to right, #606c88, #3f4c6b);
+      height: auto;
 }
 
 footer a {
