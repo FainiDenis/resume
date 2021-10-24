@@ -10,7 +10,7 @@ html{
      margin: auto;
      padding: 60px;
      width: 800px;
-     height: 1450px;
+     height: auto;
      background-color: white;
      color: black;
      background-color: #F7F8F8;
@@ -146,9 +146,8 @@ span, .companyName, .schoolName, .projectName{
 }
 
 footer {
-    margin: auto;
-      padding: 8px;
-      margin-top: 80px;
+      margin: auto;
+      padding: 10px;
       margin-left: -60px;
       margin-right: -60px;
       color: white;
