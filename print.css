@@ -8,3 +8,33 @@
 
     #nav, footer {display:none;}         
 }
+@media only screen and (max-width:830px) {
+  
+    .la-envelope, .la-linkedin-in, .la-github{
+        font-size: 100%;
+    }
+    
+    .la-link, .la-graduation-cap, .la-briefcase, .la-tools, .la-certificate, .la-folder-open{
+        font-size: 100%;
+    }
+    
+    #myName{
+        font-size: 35px;
+    }
+    
+    #jobPosition{
+        font-size: 20px;
+    }
+    
+    span, .companyName, .schoolName, .projectName{
+        font-size: 20px;
+    }
+    
+    .jobTitle{
+        font-size: 19px;
+    }
+
+    body{
+        font-size: 120%;
+    }
+}
