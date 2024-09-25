@@ -1,5 +1,5 @@
 html{
-    background: linear-gradient(to right, #f66902, #f66902);
+    background: linear-gradient(to right, #272e30, #272e30);
     color: inherit;
     margin: auto;
     padding: auto;
@@ -14,8 +14,8 @@ html{
      background-color: white;
      color: black;
      background-color: #F7F8F8;
-     font-size: 1.3em;
-     
+     font-size: medium;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #nav{
@@ -123,7 +123,7 @@ span, .companyName, .schoolName, .projectName{
 }
 
 .jobTitle{
-    font-size: 17px;
+    font-size: 14px;
     font-style: italic;
     text-decoration: underline;
 }
@@ -155,7 +155,7 @@ footer {
       margin-right: -60px;
       color: white;
       text-align: center;
-      background: linear-gradient(to right, #606c88, #3f4c6b);
+      background: linear-gradient(to right, #272e30, #3f4c6b);
       height: auto;
 }
 
