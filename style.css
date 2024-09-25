@@ -149,7 +149,7 @@ span, .companyName, .schoolName, .projectName{
 
 footer {
       margin: auto;
-      margin-top: 100px;
+      margin-top: 80px;
       padding: 10px;
       margin-left: -60px;
       margin-right: -60px;
@@ -163,4 +163,4 @@ footer a {
     color: white;
     
 }
-footer a:hover {background-color: #e91e62; color: black}
+footer a:hover {background-color: #e91e62; color: white}
