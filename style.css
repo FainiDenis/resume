@@ -106,6 +106,8 @@ html{
 .schoolYear{
     float: right;
     margin-top: -20px;
+    font-style: italic;
+    font-size: 14px;
 }
 
 #deanList{
@@ -115,6 +117,9 @@ html{
 .workYear{
     float: right;
     margin-top: -40px;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 20px;
 }
 
 span, .companyName, .schoolName, .projectName{
@@ -145,6 +150,7 @@ span, .companyName, .schoolName, .projectName{
   font-weight: bold;
   font-size: 115%;
   text-decoration: underline;
+  
 }
 
 footer {
