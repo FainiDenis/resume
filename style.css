@@ -32,6 +32,10 @@ html{
 
 }
 
+li {
+    margin-bottom: 5px;
+}
+
 .menuList{
     float: left;
     
@@ -67,13 +71,15 @@ html{
 }
 
 #myName{
-    font-size: 50px;
+    font-size: 40px;
     color: black;
+    text-align: center;
+    margin-top: -20px;;
 }
 
 #contactInfo{
-    float: right;
-    margin-top: -100px;
+    text-align: center;
+    margin-top: -20px;
     color: black;
     background-color: inherit;
 }
@@ -82,11 +88,19 @@ html{
     margin-left: 10px;
 }
 
+.contactList{
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 10px;
+}
+
 .contactList a {
     color: black;
     text-align:center;
     text-decoration: none;
     background-color: inherit;
+    
 }
 
 .contactList a:hover{
@@ -97,6 +111,7 @@ html{
 #jobPosition{
     font-size: 25px;
     margin-bottom: 30px;
+    text-align: center;;
 }
 
 .headSubtitle{
@@ -107,7 +122,7 @@ html{
     float: right;
     margin-top: -20px;
     font-style: italic;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #deanList{
@@ -118,7 +133,7 @@ html{
     float: right;
     margin-top: -40px;
     font-style: italic;
-    font-size: 14px;
+    font-size: 15px;
     padding-top: 20px;
 }
 
@@ -128,9 +143,19 @@ span, .companyName, .schoolName, .projectName{
 }
 
 .jobTitle{
-    font-size: 14px;
+    font-size: 15px;
     font-style: italic;
     text-decoration: underline;
+    margin-left: 10px;
+}
+
+.schoolName{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.companyName{
+    margin-left: 10px;
 }
 
 .shoolName, .experienceHobbies{
@@ -163,6 +188,14 @@ footer {
       text-align: center;
       background: linear-gradient(to right, #272e30, #3f4c6b);
       height: auto;
+}
+
+.projectYear{
+    float: right;
+    margin-top: -40px;
+    font-style: italic;
+    font-size: 15px;
+    padding-top: 20px;
 }
 
 footer a {
