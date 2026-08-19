@@ -1,12 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <title>Denis Faini resume</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denis Faini — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="toolbar">
+    <!-- <span>click text to edit before download resume</span> -->
+    <button type="button" id="downloadBtn" onclick="downloadResume()">↓ Download PDF</button>
+  </div>
+
+  <div class="sheet">
+
+    <div class="head">
+      <div>
+        <h1 class="head-name" contenteditable="true">Denis Faini</h1>
+        <div class="head-role" contenteditable="true">Software Developer</div>
+      </div>
+      <div class="head-contact">
+        <div contenteditable="true">dfaini25@gmail.com</div>
+        <div contenteditable="true">(585)-445-6960 (VP) · Rochester, NY</div>
+        <div contenteditable="true">linkedin.com/in/fainidenis · github.com/fainidenis</div>
+      </div>
+    </div>
+
+    <!-- <p class="summary" contenteditable="true">
+      Recent Computing Information and Technology graduate specializing in systems and network administration, with hands-on experience deploying and securing cloud and on-prem infrastructure. Skilled in automating configuration management, hardening systems to CIS/NIST benchmarks, and replacing manual operations with Python and Bash tooling.
+    </p> -->
+
+    <div class="section">
+      <p class="sec-title">Technical Skills</p>
+      <div class="skill-row"><span class="k" contenteditable="true">Cloud &amp; Virtualization</span><span class="v"
+          contenteditable="true">AWS, Oracle Cloud, Azure AD, VMware ESXi, Proxmox, Docker, Podman</span></div>
+      <div class="skill-row"><span class="k" contenteditable="true">Language, Scripting &amp; Automation</span><span
+          class="v" contenteditable="true">HTML, CSS, Bootstrap, Javascript, React.js, MySQL, PHP, Python, Java, C#, Bash, PowerShell, Ansible, Git,
+          Terraform, docker-compose, podman-quadlet </span></div>
+      <div class="skill-row"><span class="k" contenteditable="true">Systems &amp; Networking</span><span class="v"
+          contenteditable="true">Windows Server, Linux (RHEL/Debian), Active Directory, GPO, TCP/IP, VLANs, DNS/DHCP,
+          Cisco IOS, Wireshark, Jamf, FreshService, Ivanti, Zabbix, Grafanna, Uptime Kuma </span></div>
+    </div>
+
+    <div class="section">
+      <p class="sec-title">Experience</p>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title" contenteditable="true">Freelance IT Consultant</span>
+          <span class="entry-date" contenteditable="true">Nov 2025 – Present</span>
+        </div>
+        <div class="entry-sub" contenteditable="true">Building Families First</div>
+        <div class="entry-loc" contenteditable="true">Rochester, NY</div>
+        <ul class="bullets">
+          <li contenteditable="true">Provide independent technical support, network troubleshooting, and hardware
+            configuration services to local clients and small businesses.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-sub" contenteditable="true">Rochester Institute of Technology</span>
+          <span class="entry-date" contenteditable="true">Dec 2020 – April 2025</span>
+        </div>
+        <div class="entry-loc" contenteditable="true">Rochester, NY</div>
+
+        <div class="role-block">
+          <div class="role-top">
+            <span class="role-title" contenteditable="true">Front-End Developer — Golisano College of Computing
+          &amp; Information Sciences</span>
+            <span class="role-date" contenteditable="true">Aug 2024 – April 2025</span>
+          </div>
+          <ul class="bullets">
+            <li contenteditable="true">Collaborated within a team of 7 to architect, build, and deploy a full-stack flight
+            and hotel booking website for enterprise event planners.</li>
+          <li contenteditable="true">Converted Figma draft design into responsive interfaces using HTML5, CSS3,
+            JavaScript, and React.js.</li>
+          <li contenteditable="true">Authored comprehensive technical documentation outlining system architecture,
+            front-end requirements, and deployment procedures.</li>
+          </ul>
+        </div>
+
+        <div class="role-block">
+          <div class="role-top">
+            <span class="role-title" contenteditable="true">Junior System Administrator Intern — NTID Service Desk</span>
+            <span class="role-date" contenteditable="true">Jan 2024 – Aug 2024</span>
+          </div>
+          <ul class="bullets">
+            <li contenteditable="true">Supervised the daily management of computer systems, networks, and infrastructure
+              to ensure optimal uptime for all users.</li>
+            <li contenteditable="true">Maintained compliance with institute security standards across all institute
+              computers, effectively safeguarding sensitive information and significantly strengthening the
+              organization’s overall security posture.</li>
+            <li contenteditable="true">Created a standardized documentation framework for system configurations and
+              procedures, which enhanced team collaboration and reduced onboarding time for new hire.</li>
+          </ul>
+        </div>
+
+        <div class="role-block">
+          <div class="role-top">
+            <span class="role-title" contenteditable="true">IT Help Desk Technician — NTID Service Desk</span>
+            <span class="role-date" contenteditable="true">Dec 2020 – Dec 2024</span>
+          </div>
+          <ul class="bullets">
+            <li contenteditable="true">Resolve 20+ weekly tickets covering account provisioning, VPN access, and
+              endpoint troubleshooting across Windows, macOS, and Linux.</li>
+            <li contenteditable="true">Escalated unresolved issues to Tier 1 or 2 support with clear and detailed
+              information.</li>
+            <li contenteditable="true">Documented Standard Operating Procedure (SOP) for provisioning, decommissioning,
+              and network drive mapping, since adopted campus-wide by the help desk team.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="sec-title">Projects</p>
+      <div class="two-col">
+        <div class="entry">
+          <span class="entry-title" contenteditable="true">Home Lab Infrastructure: Personal Project</span>
+          <div class="stack-line" contenteditable="true">Proxmox · Ansible · AWS · Terraform · pfSense</div>
+          <ul class="bullets">
+            <li contenteditable="true">Built a self-hosted lab with Proxmox VMs mirrored to AWS EC2 via Terraform to
+              simulate hybrid-cloud failover.</li>
+            <li contenteditable="true">Wrote Ansible playbooks to standardize hardening (SSH key auth, fail2ban, CIS
+              baseline) across 2 VM and 12 linux containers (lxc).</li>
+            <li contenteditable="true">Built a segment VLAN network and firewall rules for lab, guest, services, IoT,
+               and Management</li>
+            <li contenteditable="true">Secured remote access to services using a reverse proxy and Let’s Encrypt, without
+               directly exposing the services to the public.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <span class="entry-title" contenteditable="true">Information and Computing Studies, Technical Capstone (NACT
+            295)</span>
+          <div class="stack-line" contenteditable="true">Python · Bash · Lego · Raspberry Pi</div>
+          <ul class="bullets">
+            <li contenteditable="true">Collaborated with a team of 10 to design and implement a complete camera and
+              security monitoring system, providing technical support that resolved device issues for seamless end-user
+              operation.</li>
+            <li contenteditable="true">Built a Raspberry Pi–based robotic vehicle with navigation and command-response
+              functionality.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="section">
+        <p class="sec-title">Education</p>
+        <div class="entry">
+          <div class="entry-top">
+            <span class="entry-title" contenteditable="true">B.S. Computing Information and Technology</span>
+            <span class="entry-date" contenteditable="true">Aug 2025</span>
+          </div>
+          <div class="entry-sub" contenteditable="true">Rochester Institute of Technology</div>
+          <div class="entry-loc" contenteditable="true">Networking &amp; Enterprise concentrations · GPA 3.2/4.0</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <p class="sec-title">Certifications</p>
+        <ul class="bullets">
+          <li contenteditable="true">CompTIA Security+ — In-Progress</li>
+          <li contenteditable="true">CompTIA A+ — 2020</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
 </html>
