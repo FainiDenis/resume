@@ -51,7 +51,7 @@
 
   /* sheet */
   .sheet{
-    width:var(--page-w);
+    width:min(100%, var(--page-w));
     min-height:var(--page-h);
     background:var(--paper);
     box-shadow:0 0 0 1px rgba(0,0,0,.04), 0 6px 24px rgba(0,0,0,.10);
@@ -94,6 +94,12 @@
     white-space:nowrap;
     outline:none;
   }
+  
+  a{
+    text-decoration: none;
+    color: var(--muted);
+  }
+
   .head-contact div{outline:none;}
 
   /* summary */
@@ -234,11 +240,10 @@
   /* ---- Tablet / iPad (portrait & landscape) ---- */
   @media (max-width:1024px){
     body{padding:24px 16px 60px;}
-    .sheet{width:100%;max-width:var(--page-w);}
   }
 
   /* ---- Small tablet / large phone ---- */
-  @media (max-width:880px){
+  @media (max-width:760px){
     .sheet{padding:32px 26px;}
     .head{flex-direction:column;align-items:flex-start;gap:8px;}
     .head-contact{text-align:left;}
