@@ -11,6 +11,7 @@
     --mono:'IBM Plex Mono', ui-monospace, monospace;
     --page-w:8.5in;
     --page-h:11in;
+    --resume-scale:1.5;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -53,6 +54,7 @@
   .sheet{
     width:min(100%, var(--page-w));
     min-height:var(--page-h);
+    zoom:var(--resume-scale);
     background:var(--paper);
     box-shadow:0 0 0 1px rgba(0,0,0,.04), 0 6px 24px rgba(0,0,0,.10);
     padding:.55in .62in .5in;
@@ -272,6 +274,6 @@
     html,body{background:#fff;width:var(--page-w);}
     body{padding:0;display:block;}
     .toolbar{display:none;}
-    .sheet{box-shadow:none;width:var(--page-w);min-height:var(--page-h);margin:0;}
+    .sheet{box-shadow:none;width:var(--page-w);min-height:var(--page-h);margin:0;zoom:1;}
     [contenteditable="true"]:hover,[contenteditable="true"]:focus{background:none;}
   }
