@@ -101,3 +101,6 @@
 
 ![MAC address](../screenshots/week09/image6.png)
 ![Final verification](../screenshots/week09/image7.png)
+
+---
+**Next Section**: [Week 10 — Configuring DNS](week10-dns.md)

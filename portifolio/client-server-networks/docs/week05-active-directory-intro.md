@@ -92,3 +92,6 @@ Reviewing **Account Policies / Password Policy**:
 - Opening Control Panel produced a restriction message; opening **Screen Resolution** produced the same restriction plus an `explorer.exe` error.
 - Opening **Server Manager** prompted a User Account Control box asking for administrator credentials — `testuser1` doesn't have permission to change system configuration.
 - `testuser1` was also unable to shut down the server (true) — another effect of the same restricted rights assignment.
+- 
+---
+**Next Section**: [Week 06 — Managing OUs and Active Directory Accounts](week06-ch7-ous-and-ad-accounts.md)

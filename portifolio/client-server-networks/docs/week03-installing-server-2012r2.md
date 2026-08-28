@@ -54,3 +54,7 @@ Configured the server's clock and time zone via Control Panel / Settings, matchi
 Renamed the computer and confirmed the change by capturing the new workgroup name after the rename and reboot.
 
 ![Workgroup name](../screenshots/week03/image22.png)
+
+---
+**Next Section**: [Week 04 — Configuring File and Printer Services](week04-file-and-printer-services.md)
+

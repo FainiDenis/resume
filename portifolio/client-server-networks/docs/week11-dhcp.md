@@ -20,3 +20,6 @@
 | 11-4 | Step 9 | ![11-4c](../screenshots/week11/image14.png) |
 | 11-7 | Step 1 | ![11-7a](../screenshots/week11/image15.png) ![11-7a2](../screenshots/week11/image16.png) |
 | 11-7 | Step 2 | ![11-7b](../screenshots/week11/image17.png) ![11-7b2](../screenshots/week11/image18.png) |
+
+---
+**Next Section**: [Week 12 — Introduction to Linux](week12-linux-intro.md)

@@ -20,3 +20,6 @@ Evidence captured at the checkpoint noted for each activity:
 | 7-15 | Step 9 (AdvUser1, AdvUser2, AdvUser3) | ![7-15a](../screenshots/week06/image20.png) ![7-15b](../screenshots/week06/image21.png) |
 
 These activities cover creating and organizing OUs, bulk-creating user accounts, moving/renaming/deleting objects, and using the account-creation wizard's advanced options — the working set that Group Policy in [Week 07](week07-ch8-group-policies.md) gets applied against.
+
+---
+**Next Section**: [Week 07 — Configuring Group Policies (Chapter 8)](week07-ch8-group-policies.md)

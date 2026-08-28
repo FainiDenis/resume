@@ -72,3 +72,6 @@ Added a new administrator account through **System Settings → User Accounts** 
 ## Bonus — Installing Google Chrome on Ubuntu Desktop
 
 ![Chrome installed](../screenshots/week12/image12.png)
+
+---
+**Next Section**: [Week 14 — Remote Access & Long-Distance Communications (Ch. 3)](week14-vpn-remote-access.md)

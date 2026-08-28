@@ -52,3 +52,7 @@ Public addresses must be globally unique; private addresses don't need to be, si
 - 1 byte = 1 octet = 8 bits.
 - An IPv4 address is 32 bits (4 bytes); an IPv6 address is 128 bits (16 bytes).
 - Example IPv6 address: `fe80::6512:9f05:ccd3:513a`
+
+---
+
+**Next Section**: [Week 02 — Introducing Windows Server 2012 R2](week02-introducing-server-2012r2.md)

@@ -15,3 +15,6 @@ Evidence captured at the checkpoint noted for each activity:
 | 8-19 | Step 15 | ![8-19b](../screenshots/week07/image8.png) |
 
 Activity 8-19 (creating and linking a login-script GPO) also doubled as a bonus checkpoint for the [Week 10 DNS lab](week10-dns.md).
+
+---
+**Next Section**: [Week 09 — Configuring TCP/IP (Chapter 9)](week09-ch9-tcpip.md)

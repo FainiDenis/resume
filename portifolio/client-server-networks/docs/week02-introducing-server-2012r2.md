@@ -43,3 +43,6 @@ Connected to the class file share (`\\10.1.100.51`), copied the lab files to an 
 ![Select Server Roles](../screenshots/week02/image4.png)
 
 - **20 roles** are available in the list; **one** — DNS Server — was already installed.
+
+---
+**Next Section**: [Week 03 — Installing Windows Server 2012 R2](week03-installing-server-2012r2.md)
