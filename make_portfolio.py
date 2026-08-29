@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Embed every Markdown file under portifolio/ into portfolio-data.js.
+"""Embed every Markdown file under showcase/ into portfolio-data.js.
 
 The portfolio view reads documents from this embedded data first, so the site
 works even when opened directly from the file system (file://) where browsers
 block runtime fetch() of local files. Re-run this any time you add or edit a
-document in portifolio/:
+document in showcase/:
 
     python3 make_portfolio.py
 """
@@ -12,8 +12,8 @@ document in portifolio/:
 import json
 import pathlib
 
-ROOT = pathlib.Path("portifolio")
-OUT = pathlib.Path("portfolio-data.js")
+ROOT = pathlib.Path("showcase")
+OUT = pathlib.Path("js/portfolio-data.js")
 
 data = {}
 for md in sorted(ROOT.rglob("*.md")):
