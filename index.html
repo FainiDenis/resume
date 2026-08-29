@@ -9,17 +9,20 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
     rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <div class="toolbar">
-    <!-- <span>click text to edit before download resume</span> -->
+    <div class="tabs" role="tablist" aria-label="Site sections">
+      <button type="button" class="tab is-active" data-view="resume" role="tab" aria-selected="true">Resume</button>
+      <button type="button" class="tab" data-view="portfolio" role="tab" aria-selected="false">Portfolio</button>
+    </div>
     <button type="button" id="downloadBtn" onclick="downloadResume()">↓ Download PDF</button>
   </div>
 
-  <div class="sheet">
+  <div class="sheet" id="resumeView">
 
     <div class="head">
       <div>
@@ -165,10 +168,25 @@
 
   </div>
 
+  <div class="portfolio" id="portfolioView" hidden>
+    <aside class="port-sidebar" id="portSidebar" aria-label="Projects"></aside>
+    <select class="port-select" id="portSelect" aria-label="Documents"></select>
+    <main class="port-content" id="portContent">
+      <div class="markdown-body">
+        <p class="port-kicker">Portfolio</p>
+        <h1>Coursework &amp; lab write-ups</h1>
+        <p>Every project and assignment below is written up in Markdown and rendered right here — pick one from the sidebar to read/view it.</p>
+        <div class="port-cards" id="portCards"></div>
+      </div>
+    </main>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="./js/marked.min.js"></script>
+  <script src="./js/portfolio-data.js"></script>
 
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 
