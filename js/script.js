@@ -8,17 +8,16 @@ async function downloadResume() {
   btn.disabled = true;
 
   try {
+    const prevZoom = sheet.style.zoom;
+    sheet.style.zoom = '1';
+
     const canvas = await html2canvas(sheet, {
       scale: 3,
       useCORS: true,
-      backgroundColor: '#ffffff',
-      windowWidth: sheet.scrollWidth,
-      windowHeight: sheet.scrollHeight,
-      scrollX: 0,
-      scrollY: -window.scrollY,
-      x: 0,
-      y: 0
+      backgroundColor: '#ffffff'
     });
+
+    sheet.style.zoom = prevZoom;
 
     const { jsPDF } = window.jspdf;
     const pdf = new jsPDF({ unit: 'in', format: 'letter', orientation: 'portrait' });
