@@ -178,9 +178,9 @@
     outline:none;
   }
   .entry-sub{
-    font-size:11px;
+    font-size:10.5px;
     color:var(--accent);
-    font-weight:500;
+    font-weight:100;
     outline:none;
   }
   .entry-date{
@@ -230,7 +230,7 @@
     gap:10px;
   }
   .role-title{
-    font-size:11.2px;
+    font-size:11.8px;
     font-weight:600;
     color:var(--ink);
     outline:none;
