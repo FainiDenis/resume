@@ -52,7 +52,7 @@ const PORTFOLIO = [
     title: 'Client-Server Networks',
     sub: 'Windows Server 2012 R2 Administration',
     tag: 'coursework',
-    dir: 'portifolio/client-server-networks',
+    dir: 'showcase/client-server-networks',
     docs: [
       { file: 'README.md', label: 'Overview' },
       { file: 'docs/00-addressing-extra-credit.md', label: 'Extra Credit · IPv4/IPv6 Addressing' },
@@ -74,7 +74,7 @@ const PORTFOLIO = [
     title: 'LAN/WAN Design',
     sub: 'Network design & Cisco labs',
     tag: 'coursework',
-    dir: 'portifolio/lan-wan-design',
+    dir: 'showcase/lan-wan-design',
     docs: [
       { file: 'README.md', label: 'Overview' },
       { file: 'docs/01-course-overview.md', label: 'Course Overview' },
@@ -88,7 +88,7 @@ const PORTFOLIO = [
     title: 'Systems Administration',
     sub: 'Windows Server, Linux, DevOps',
     tag: 'coursework',
-    dir: 'portifolio/system-administration',
+    dir: 'showcase/system-administration',
     docs: [
       { file: 'system-admin-I.md', label: 'Systems Admin I · Overview' },
       { file: 'system-admin-II.md', label: 'Systems Admin II · Overview' },
