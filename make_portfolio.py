@@ -7,6 +7,10 @@ block runtime fetch() of local files. Re-run this any time you add or edit a
 document in showcase/:
 
     python3 make_portfolio.py
+
+Each document is written as its own readable template-literal block (real
+newlines, no \\n escapes), only escaping the characters JavaScript requires
+(backslash, backtick, and ``${``) so the file stays human-readable.
 """
 
 import json
@@ -15,13 +19,21 @@ import pathlib
 ROOT = pathlib.Path("showcase")
 OUT = pathlib.Path("js/portfolio-data.js")
 
-data = {}
-for md in sorted(ROOT.rglob("*.md")):
-    data[md.as_posix()] = md.read_text(encoding="utf-8")
 
-OUT.write_text(
-    "window.PORTFOLIO_DATA = " + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n",
-    encoding="utf-8",
-)
+def js_template_escape(s: str) -> str:
+    """Escape a string so it can be embedded verbatim in a JS template literal."""
+    return s.replace("\\", "\\\\").replace("`", "\\`").replace("${", "\\${")
 
-print(f"embedded {len(data)} documents -> {OUT}")
+
+docs = sorted(ROOT.rglob("*.md"))
+
+lines = ["window.PORTFOLIO_DATA = (() => {", "  const DATA = {};"]
+for md in docs:
+    path = md.as_posix()
+    body = js_template_escape(md.read_text(encoding="utf-8"))
+    lines.append(f"  DATA[{json.dumps(path)}] = `{body}`;")
+lines.append("  return DATA;")
+lines.append("})();")
+
+OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
+print(f"embedded {len(docs)} documents -> {OUT}")
