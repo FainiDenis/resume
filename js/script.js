@@ -11,11 +11,14 @@ async function downloadResume() {
     const prevZoom = sheet.style.zoom;
     sheet.style.zoom = '1';
 
+    const hideIcons = () => { sheet.classList.add('no-icons'); };
+    const showIcons = () => { sheet.classList.remove('no-icons'); };
+    hideIcons();
     const canvas = await html2canvas(sheet, {
       scale: 3,
       useCORS: true,
       backgroundColor: '#ffffff'
-    });
+    }).then(c => { showIcons(); return c; }).catch(e => { showIcons(); throw e; });
 
     sheet.style.zoom = prevZoom;
 
@@ -159,6 +162,44 @@ const PORTFOLIO = [
   }
 ];
 
+/* Per-project icon + accent color so each project reads differently at a glance. */
+const PROJECT_META = {
+  'event-based-travel': {
+    color: '#0f766e',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16h20"/><path d="M3 20h18"/><path d="M21.2 10.8 12 6 6.5 2"/><path d="M5 16 3.5 12a2.1 2.1 0 0 1 2.6-2.7L9 10"/><path d="m9 10 3.2 1.2L10 4.5a1.9 1.9 0 0 1 3-1.9l6 4.7a1.6 1.6 0 0 1 .2 2.3l-1 1-2.2 5.4"/></svg>'
+  },
+  'client-server-networks': {
+    color: '#2563eb',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M8 7.5h.01M8 16.5h.01M12 7.5h4M12 16.5h4"/></svg>'
+  },
+  'lan-wan-design': {
+    color: '#4f46e5',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M7.3 11 16.7 7M7.3 13l9.4 4"/></svg>'
+  },
+  'system-administration': {
+    color: '#7c3aed',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="m7 9 3 3-3 3"/><path d="m12 15 2 0"/></svg>'
+  },
+  'task-automation': {
+    color: '#d97706',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 4 4-4 4"/><path d="M11 16h8"/><rect x="2" y="3" width="20" height="18" rx="2"/></svg>'
+  },
+  'configuration-management': {
+    color: '#059669',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1l2.1-2.1M17 7l2.1-2.1"/></svg>'
+  }
+};
+
+function iconSVG(id) {
+  const m = PROJECT_META[id];
+  return m ? m.icon : '';
+}
+
+function accentColor(id) {
+  const m = PROJECT_META[id];
+  return m ? m.color : '#2c4a5e';
+}
+
 (function initPortfolio() {
   const pageBase = new URL('.', location.href).href;
   const sidebar = document.getElementById('portSidebar');
@@ -180,13 +221,23 @@ const PORTFOLIO = [
     head.type = 'button';
     head.className = 'port-project';
     head.dataset.path = pathOf(p, p.docs[0]);
+    head.style.setProperty('--acc', accentColor(p.id));
+    const acc = document.createElement('span');
+    acc.className = 'port-project-acc';
+    acc.setAttribute('aria-hidden', 'true');
+    const iconWrap = document.createElement('span');
+    iconWrap.className = 'port-project-icon';
+    iconWrap.innerHTML = iconSVG(p.id) || '';
+    const label = document.createElement('span');
+    label.className = 'port-project-label';
     const title = document.createElement('span');
     title.className = 'port-project-title';
     title.textContent = p.title;
     const sub = document.createElement('span');
     sub.className = 'port-project-sub';
     sub.textContent = p.sub;
-    head.append(title, sub);
+    label.append(title, sub);
+    head.append(acc, iconWrap, label);
 
     const ul = document.createElement('ul');
     ul.className = 'port-docs';
@@ -207,10 +258,14 @@ const PORTFOLIO = [
     if (cards) {
       const card = document.createElement('article');
       card.className = 'port-card';
+      card.style.setProperty('--acc', accentColor(p.id));
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'port-card-btn';
       btn.dataset.path = pathOf(p, p.docs[0]);
+      const cardIcon = document.createElement('span');
+      cardIcon.className = 'port-card-icon';
+      cardIcon.innerHTML = iconSVG(p.id) || '';
       const cardTitle = document.createElement('h3');
       cardTitle.textContent = p.title;
       const cardSub = document.createElement('p');
@@ -218,7 +273,7 @@ const PORTFOLIO = [
       const cta = document.createElement('span');
       cta.className = 'port-card-cta';
       cta.textContent = 'Browse docs →';
-      btn.append(cardTitle, cardSub, cta);
+      btn.append(cardIcon, cardTitle, cardSub, cta);
       card.appendChild(btn);
       cards.appendChild(card);
     }
