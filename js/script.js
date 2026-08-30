@@ -48,6 +48,17 @@ async function downloadResume() {
 
 const PORTFOLIO = [
   {
+    id: 'event-based-travel',
+    title: 'Event-Based Travel Planning',
+    sub: 'Team capstone · web + mobile travel booking',
+    tag: 'project',
+    dir: 'showcase/event-based-travel',
+    docs: [
+      { file: 'README.md', label: 'Overview' },
+      { file: 'docs/01-wireframes.md', label: 'Wireframe Design Demo' }
+    ]
+  },
+  {
     id: 'client-server-networks',
     title: 'Client-Server Networks',
     sub: 'Windows Server 2012 R2 Administration',
@@ -55,18 +66,18 @@ const PORTFOLIO = [
     dir: 'showcase/client-server-networks',
     docs: [
       { file: 'README.md', label: 'Overview' },
-      { file: 'docs/00-addressing-extra-credit.md', label: 'Extra Credit · IPv4/IPv6 Addressing' },
-      { file: 'docs/week02-introducing-server-2012r2.md', label: 'Week 02 · Introducing Server 2012 R2' },
-      { file: 'docs/week03-installing-server-2012r2.md', label: 'Week 03 · Installing Server 2012 R2' },
-      { file: 'docs/week04-file-and-printer-services.md', label: 'Week 04 · File & Printer Services' },
-      { file: 'docs/week05-active-directory-intro.md', label: 'Week 05 · Active Directory Intro' },
-      { file: 'docs/week06-ch7-ous-and-ad-accounts.md', label: 'Week 06 · OUs & AD Accounts' },
-      { file: 'docs/week07-ch8-group-policies.md', label: 'Week 07 · Configuring Group Policies' },
-      { file: 'docs/week09-ch9-tcpip.md', label: 'Week 09 · Configuring TCP/IP' },
-      { file: 'docs/week10-dns.md', label: 'Week 10 · Configuring DNS' },
-      { file: 'docs/week11-dhcp.md', label: 'Week 11 · Configuring DHCP' },
-      { file: 'docs/week12-linux-intro.md', label: 'Week 12 · Introduction to Linux' },
-      { file: 'docs/week14-vpn-remote-access.md', label: 'Week 14 · Remote Access & VPN' }
+      { file: 'docs/00-addressing-extra-credit.md', label: 'IPv4/IPv6 Addressing' },
+      { file: 'docs/week02-introducing-server-2012r2.md', label: 'Introducing Server 2012 R2' },
+      { file: 'docs/week03-installing-server-2012r2.md', label: 'Installing Server 2012 R2' },
+      { file: 'docs/week04-file-and-printer-services.md', label: 'File & Printer Services' },
+      { file: 'docs/week05-active-directory-intro.md', label: 'Active Directory Intro' },
+      { file: 'docs/week06-ch7-ous-and-ad-accounts.md', label: 'OUs & AD Accounts' },
+      { file: 'docs/week07-ch8-group-policies.md', label: 'Configuring Group Policies' },
+      { file: 'docs/week09-ch9-tcpip.md', label: 'Configuring TCP/IP' },
+      { file: 'docs/week10-dns.md', label: 'Configuring DNS' },
+      { file: 'docs/week11-dhcp.md', label: 'Configuring DHCP' },
+      { file: 'docs/week12-linux-intro.md', label: 'Introduction to Linux' },
+      { file: 'docs/week14-vpn-remote-access.md', label: 'Remote Access & VPN' }
     ]
   },
   {
@@ -77,7 +88,7 @@ const PORTFOLIO = [
     dir: 'showcase/lan-wan-design',
     docs: [
       { file: 'README.md', label: 'Overview' },
-      { file: 'docs/01-course-overview.md', label: 'Course Overview' },
+      { file: 'docs/01-course-overview.md', label: 'Overview' },
       { file: 'docs/02-homework-assignments.md', label: 'Homework Assignments' },
       { file: 'docs/03-lab-exercises.md', label: 'Lab Exercises' },
       { file: 'docs/04-skills-summary.md', label: 'Skills & Competencies' }
@@ -92,12 +103,58 @@ const PORTFOLIO = [
     docs: [
       { file: 'system-admin-I.md', label: 'Systems Admin I · Overview' },
       { file: 'system-admin-II.md', label: 'Systems Admin II · Overview' },
+      { file: 'multi-distro-install-lab.md', label: 'Multi-Distro Install · Overview' },
+      // { file: 'docs/linux-install-lab/01-linux-mint.md', label: 'Linux Mint' },
+      // { file: 'docs/linux-install-lab/02-debian.md', label: 'Debian' },
+      // { file: 'docs/linux-install-lab/03-centos.md', label: 'CentOS' },
+      // { file: 'docs/linux-install-lab/04-fedora.md', label: 'Fedora' },
+      // { file: 'docs/linux-install-lab/05-rhel8.md', label: 'RHEL 8' },
+      // { file: 'docs/linux-install-lab/06-freebsd.md', label: 'FreeBSD' },
+      // { file: 'docs/linux-install-lab/07-puppy.md', label: 'Puppy Linux' },
+      // { file: 'docs/linux-install-lab/08-zorin.md', label: 'Zorin OS' },
+      // { file: 'docs/linux-install-lab/09-parrot.md', label: 'Parrot OS' },
       { file: 'docs/sysadmin-I/01-active-directory.md', label: 'SysAdmin I · Active Directory' },
       { file: 'docs/sysadmin-I/02-linux-foundations.md', label: 'SysAdmin I · Linux Foundations' },
       { file: 'docs/sysadmin-I/03-storage-management.md', label: 'SysAdmin I · Storage Management' },
       { file: 'docs/sysadmin-I/04-network-services.md', label: 'SysAdmin I · Network Services' },
       { file: 'docs/sysadmin-I/05-web-and-email.md', label: 'SysAdmin I · Web & Email Servers' },
-      { file: 'docs/sysadmin-II/01-active-directory.md', label: 'SysAdmin II · Active Directory & Cross-Platform' }
+      { file: 'docs/sysadmin-II/01-infrastructure.md', label: 'SysAdmin II · Enterprise Infrastructure' },
+      { file: 'docs/sysadmin-II/02-monitoring-logging.md', label: 'SysAdmin II · Monitoring & Logging' },
+      { file: 'docs/sysadmin-II/03-cross-platform-integration.md', label: 'SysAdmin II · Cross-Platform Integration' },
+      { file: 'docs/sysadmin-II/04-containerization.md', label: 'SysAdmin II · Containerization (Docker)' },
+      { file: 'docs/sysadmin-II/05-kubernetes.md', label: 'SysAdmin II · Kubernetes Orchestration' },
+      { file: 'docs/sysadmin-II/06-enterprise-mail.md', label: 'SysAdmin II · Enterprise Mail (Exchange)' },
+      { file: 'docs/sysadmin-II/07-pki-security.md', label: 'SysAdmin II · PKI & Security' }
+    ]
+  },
+  {
+    id: 'task-automation',
+    title: 'Task Automation',
+    sub: 'Scripting with Bash & Python',
+    tag: 'coursework',
+    dir: 'showcase/task-automation',
+    docs: [
+      { file: 'README.md', label: 'Overview' },
+      { file: 'docs/01-linux-command-line.md', label: 'Linux Command-Line & Data Parsing' },
+      { file: 'docs/02-bash-scripting.md', label: 'Bash Scripting' },
+      { file: 'docs/03-python-data-processing.md', label: 'Python Data Processing' },
+      { file: 'docs/04-system-monitoring.md', label: 'System Monitoring & Visualization' },
+      { file: 'docs/05-user-lifecycle-automation.md', label: 'User Lifecycle Automation' }
+    ]
+  },
+  {
+    id: 'configuration-management',
+    title: 'Configuration Management',
+    sub: 'DevOps, orchestration & high availability',
+    tag: 'coursework',
+    dir: 'showcase/configuration-management',
+    docs: [
+      { file: 'README.md', label: 'Overview' },
+      { file: 'docs/01-package-management.md', label: 'Package Management' },
+      { file: 'docs/02-service-management.md', label: 'Service Management (systemd)' },
+      { file: 'docs/03-secure-remote-automation.md', label: 'Secure Remote Automation (SSH & Ansible)' },
+      { file: 'docs/04-team-workflow.md', label: 'Team Workflow with Azure DevOps' },
+      { file: 'docs/05-containerized-application-deployment.md', label: 'Containerized HA Deployment' }
     ]
   }
 ];
