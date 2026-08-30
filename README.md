@@ -15,7 +15,7 @@ An interactive, responsive resume site built with vanilla HTML, CSS, and JavaScr
 
 ## Adding Portfolio Content
 
-1. Add your assignment or write-up as Markdown under `portifolio/<project>/`.
+1. Add your assignment or write-up as Markdown under `showcase/<project>/`.
 2. Register it in the `PORTFOLIO` array in `./js/script.js` (title, folder, and a labeled list of docs).
 3. Regenerate the embedded data so it loads anywhere:
 

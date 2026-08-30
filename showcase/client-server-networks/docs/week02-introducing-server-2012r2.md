@@ -1,4 +1,4 @@
-# Week 02 — Introducing Windows Server 2012 R2
+# Introducing Windows Server 2012 R2
 
 **Objective:** identify system requirements across the Windows Server 2012 R2 editions, compare them against a Windows 10 Enterprise client and a real lab PC, then get a first look at NTFS permissions and the Server Manager role catalog.
 
@@ -45,4 +45,4 @@ Connected to the class file share (`\\10.1.100.51`), copied the lab files to an 
 - **20 roles** are available in the list; **one** — DNS Server — was already installed.
 
 ---
-**Next Section**: [Week 03 — Installing Windows Server 2012 R2](week03-installing-server-2012r2.md)
+**Next Section**: [Installing Windows Server 2012 R2](week03-installing-server-2012r2.md)

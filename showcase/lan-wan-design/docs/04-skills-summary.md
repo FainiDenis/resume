@@ -193,7 +193,7 @@ Throughout LAN/WAN Design, I developed practical networking skills through hands
 
 ## Real-World Applications
 
-The skills I learned in this course apply directly to:
+The skills I learned here apply directly to:
 
 1. **Network Administrator**: Configuring routers and switches for small to medium businesses
 2. **Network Engineer**: Designing and implementing LAN/WAN infrastructure
@@ -206,7 +206,7 @@ The skills I learned in this course apply directly to:
 ## Future Learning Path
 
 ### Certifications
-- **CCNA**: The natural next step after this course
+- **CCNA**: A natural next step after this networking work
 - **Network+**: Vendor-neutral networking certification
 
 ### Advanced Topics
@@ -224,11 +224,11 @@ The skills I learned in this course apply directly to:
 
 ## Final Thoughts
 
-This course gave me a solid foundation in network design and configuration. I'm comfortable with:
+This work gave me a solid foundation in network design and configuration. I'm comfortable with:
 - Router and switch commands
 - Routing protocols and their configuration
 - VLANs and switching technologies
 - DHCP and NAT services
 - Basic security practices
 
-I look forward to building on this foundation in future courses and professional work.
+I look forward to building on this foundation in future work and professional practice.

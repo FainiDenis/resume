@@ -1,6 +1,6 @@
-# Week 07 — Configuring Group Policies (Chapter 8)
+# Configuring Group Policies
 
-**Objective:** apply and test Group Policy Objects against the OU structure built in [Week 06](week06-ch7-ous-and-ad-accounts.md) — this lab assumes Chapter 7's activities are already complete.
+**Objective:** apply and test Group Policy Objects against the OU structure built in [Managing OUs and Active Directory Accounts](week06-ch7-ous-and-ad-accounts.md).
 
 Evidence captured at the checkpoint noted for each activity:
 
@@ -14,7 +14,7 @@ Evidence captured at the checkpoint noted for each activity:
 | 8-19 | Step 2 | ![8-19a](../screenshots/week07/image7.png) |
 | 8-19 | Step 15 | ![8-19b](../screenshots/week07/image8.png) |
 
-Activity 8-19 (creating and linking a login-script GPO) also doubled as a bonus checkpoint for the [Week 10 DNS lab](week10-dns.md).
+Activity 8-19 (creating and linking a login-script GPO) also doubled as a bonus checkpoint for the [Configuring DNS](week10-dns.md) lab.
 
 ---
-**Next Section**: [Week 09 — Configuring TCP/IP (Chapter 9)](week09-ch9-tcpip.md)
+**Next Section**: [Configuring TCP/IP](week09-ch9-tcpip.md)

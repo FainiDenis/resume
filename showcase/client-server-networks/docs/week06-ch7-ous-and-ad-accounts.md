@@ -1,6 +1,6 @@
-# Week 06 — Managing OUs and Active Directory Accounts
+# Managing OUs and Active Directory Accounts
 
-**Objective:** work through Chapter 7's Organizational Unit and AD account management activities on **410Server1** — this lab assumes DNS and AD DS are already installed (see [Week 05](week05-active-directory-intro.md)).
+**Objective:** work through Chapter 7's Organizational Unit and AD account management activities on **410Server1** — this lab assumes DNS and AD DS are already installed (see [Introducing Active Directory](week05-active-directory-intro.md)).
 
 Evidence captured at the checkpoint noted for each activity:
 
@@ -19,7 +19,7 @@ Evidence captured at the checkpoint noted for each activity:
 | 7-14 | Step 9 | ![7-14](../screenshots/week06/image19.png) |
 | 7-15 | Step 9 (AdvUser1, AdvUser2, AdvUser3) | ![7-15a](../screenshots/week06/image20.png) ![7-15b](../screenshots/week06/image21.png) |
 
-These activities cover creating and organizing OUs, bulk-creating user accounts, moving/renaming/deleting objects, and using the account-creation wizard's advanced options — the working set that Group Policy in [Week 07](week07-ch8-group-policies.md) gets applied against.
+These activities cover creating and organizing OUs, bulk-creating user accounts, moving/renaming/deleting objects, and using the account-creation wizard's advanced options — the working set that [Group Policy](week07-ch8-group-policies.md) is applied against.
 
 ---
-**Next Section**: [Week 07 — Configuring Group Policies (Chapter 8)](week07-ch8-group-policies.md)
+**Next Section**: [Configuring Group Policies](week07-ch8-group-policies.md)

@@ -55,4 +55,4 @@ Public addresses must be globally unique; private addresses don't need to be, si
 
 ---
 
-**Next Section**: [Week 02 — Introducing Windows Server 2012 R2](week02-introducing-server-2012r2.md)
+**Next Section**: [Introducing Windows Server 2012 R2](week02-introducing-server-2012r2.md)

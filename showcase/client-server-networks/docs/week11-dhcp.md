@@ -1,4 +1,4 @@
-# Week 11 — Configuring DHCP
+# Configuring DHCP
 
 **Objective:** install and configure the DHCP server role — scopes, exclusions, reservations, and lease behavior — and verify clients pick up addresses correctly.
 
@@ -22,4 +22,4 @@
 | 11-7 | Step 2 | ![11-7b](../screenshots/week11/image17.png) ![11-7b2](../screenshots/week11/image18.png) |
 
 ---
-**Next Section**: [Week 12 — Introduction to Linux](week12-linux-intro.md)
+**Next Section**: [Introduction to Linux](week12-linux-intro.md)

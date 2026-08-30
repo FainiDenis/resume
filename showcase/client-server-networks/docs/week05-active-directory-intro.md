@@ -1,4 +1,4 @@
-# Week 05 — Introducing Active Directory
+# Introducing Active Directory
 
 **Objective:** install AD DS as the first domain controller in a new forest, explore Active Directory's container objects, then get a first look at Group Policy.
 
@@ -94,4 +94,4 @@ Reviewing **Account Policies / Password Policy**:
 - `testuser1` was also unable to shut down the server (true) — another effect of the same restricted rights assignment.
 - 
 ---
-**Next Section**: [Week 06 — Managing OUs and Active Directory Accounts](week06-ch7-ous-and-ad-accounts.md)
+**Next Section**: [Managing OUs and Active Directory Accounts](week06-ch7-ous-and-ad-accounts.md)

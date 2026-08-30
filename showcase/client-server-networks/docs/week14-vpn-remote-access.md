@@ -1,4 +1,4 @@
-# Week 14 — Remote Access & Long-Distance Communications (Ch. 3)
+# Remote Access & Long-Distance Communications
 
 **Objective:** install and use a campus VPN, then compare two remote-desktop tools (LogMeIn and TeamViewer) for accessing a machine remotely.
 

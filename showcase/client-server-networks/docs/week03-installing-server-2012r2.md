@@ -1,4 +1,4 @@
-# Week 03 — Installing Windows Server 2012 R2
+# Installing Windows Server 2012 R2
 
 **Objective:** stand up the first Windows Server 2012 R2 VM from scratch — plan the server name, protocol, IP addressing and time zone up front, then walk the VMware + Windows Setup wizards end-to-end.
 
@@ -56,5 +56,5 @@ Renamed the computer and confirmed the change by capturing the new workgroup nam
 ![Workgroup name](../screenshots/week03/image22.png)
 
 ---
-**Next Section**: [Week 04 — Configuring File and Printer Services](week04-file-and-printer-services.md)
+**Next Section**: [Configuring File and Printer Services](week04-file-and-printer-services.md)
 

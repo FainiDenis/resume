@@ -4,7 +4,7 @@
 
 ### About This
 
-This repository contains my complete coursework from LAN/WAN Design, completed during the Fall 2018 semester at National Technical Institute for the Deaf | RIT. Over the course of 14 weeks, I learned the fundamentals of network design, routing protocols, switching, and network security through hands-on lab exercises and theoretical homework assignments.
+This contains my hands-on work in LAN/WAN network design — the fundamentals of network design, routing protocols, switching, and network security, learned through lab exercises on real Cisco equipment plus written assignments.
 
 ### What's Inside
 
@@ -90,7 +90,7 @@ Configured secure remote access to routers:
 
 ### Key Takeaways
 
-This course gave me hands-on experience with enterprise networking equipment and protocols. I learned:
+This work gave me hands-on experience with enterprise networking equipment and protocols. I learned:
 
 1. **The OSI Model isn't just theory** - Every layer has practical applications in network configuration
 2. **Routing protocols have trade-offs** - RIP for simplicity, OSPF for scalability

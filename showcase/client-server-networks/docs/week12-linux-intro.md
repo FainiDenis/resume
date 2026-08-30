@@ -1,4 +1,4 @@
-# Week 12 — Introduction to Linux
+# Introduction to Linux
 
 **Objective:** install Ubuntu Desktop and Ubuntu Server as VMs, compare the two, get them talking to each other over the network, and manage local user accounts on each.
 
@@ -74,4 +74,4 @@ Added a new administrator account through **System Settings → User Accounts** 
 ![Chrome installed](../screenshots/week12/image12.png)
 
 ---
-**Next Section**: [Week 14 — Remote Access & Long-Distance Communications (Ch. 3)](week14-vpn-remote-access.md)
+**Next Section**: [Remote Access & Long-Distance Communications](week14-vpn-remote-access.md)

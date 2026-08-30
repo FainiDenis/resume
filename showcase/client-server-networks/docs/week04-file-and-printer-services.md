@@ -1,4 +1,4 @@
-# Week 04 — Configuring File and Printer Services
+# Configuring File and Printer Services
 
 **Objective:** manage NTFS permissions and ownership, create and lock down Windows file shares, then install, share, and connect to a network printer.
 
@@ -72,4 +72,4 @@ Connected a client to the shared printer and printed a test page successfully.
 Canceling a queued print job from the client left it paused on the server — resolved by having the server administrator un-pause the printer to release the job.
 
 ---
-**Next Section**: [Week 05 — Introducing Active Directory](week05-active-directory-intro.md)
+**Next Section**: [Introducing Active Directory](week05-active-directory-intro.md)

@@ -1,4 +1,4 @@
-# Week 09 — Configuring TCP/IP (Chapter 9)
+# Configuring TCP/IP
 
 **Objective:** drill binary/decimal conversion, CIDR math, and hands-on TCP/IP tooling (`arp`, `tracert`, `ping -6`, static IPv6) across the lab's Windows machines.
 
@@ -103,4 +103,4 @@
 ![Final verification](../screenshots/week09/image7.png)
 
 ---
-**Next Section**: [Week 10 — Configuring DNS](week10-dns.md)
+**Next Section**: [Configuring DNS](week10-dns.md)

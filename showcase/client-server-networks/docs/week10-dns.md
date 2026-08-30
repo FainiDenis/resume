@@ -1,4 +1,4 @@
-# Week 10 — Configuring DNS
+# Configuring DNS
 
 **Objective:** work through the textbook's DNS configuration activities on **410Server1** — forward/reverse lookup zones, records, and DNS-dependent server behavior.
 
@@ -12,4 +12,4 @@
 | 8-19 (bonus, carried over from Ch. 8) | Step 15 | ![8-19 bonus](../screenshots/week10/image10.png) |
 
 ---
-**Next Section**: [Week 11 — Configuring DHCP](week11-dhcp.md)
+**Next Section**: [Configuring DHCP](week11-dhcp.md)
