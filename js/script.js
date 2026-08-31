@@ -9,15 +9,24 @@ async function downloadResume() {
 
   try {
     const prevZoom = sheet.style.zoom;
+    const root = document.documentElement;
+    const wasPdfMode = root.classList.contains('pdf-mode');
     sheet.style.zoom = '1';
+    root.classList.add('pdf-mode');
+
+    // Let the browser reflow to the desktop layout before capturing.
+    const nextFrame = () => new Promise(res => requestAnimationFrame(() => res()));
+    await nextFrame();
+    await nextFrame();
 
     const canvas = await html2canvas(sheet, {
-      scale: 3,
+      scale: sheet.offsetWidth <= 900 ? 2 : 3,
       useCORS: true,
       backgroundColor: '#ffffff'
     });
 
     sheet.style.zoom = prevZoom;
+    if (!wasPdfMode) root.classList.remove('pdf-mode');
 
     const { jsPDF } = window.jspdf;
     const pdf = new jsPDF({ unit: 'in', format: 'letter', orientation: 'portrait' });

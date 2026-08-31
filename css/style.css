@@ -516,6 +516,39 @@
     .port-cards{grid-template-columns:1fr;}
   }
 
+  /* ---- PDF capture mode ---- */
+  /* Forces the desktop layout when capturing via html2canvas,
+     so mobile users get a correctly-styled PDF. */
+  html.pdf-mode, html.pdf-mode body{
+    padding:0;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+  }
+  html.pdf-mode .sheet{
+    zoom:1;
+    width:var(--page-w);
+    min-height:var(--page-h);
+    padding:.55in .62in .5in;
+    box-shadow:none;
+    margin:0;
+  }
+  html.pdf-mode .head{
+    flex-direction:row;
+    align-items:flex-end;
+    gap:20px;
+  }
+  html.pdf-mode .head-contact{text-align:right;}
+  html.pdf-mode .head-name{font-size:29px;}
+  html.pdf-mode .head-role{font-size:12px;}
+  html.pdf-mode .skill-row{flex-direction:row;gap:10px;margin-bottom:3px;}
+  html.pdf-mode .skill-row .k{flex:0 0 148px;}
+  html.pdf-mode .entry-top,
+  html.pdf-mode .role-top{flex-direction:row;align-items:baseline;gap:10px;}
+  html.pdf-mode .toolbar{display:none;}
+
   @media print{
     @page{size:Letter;margin:0;}
     html,body{background:#fff;width:var(--page-w);}
