@@ -1,53 +1,30 @@
 async function downloadResume() {
   const btn = document.getElementById('downloadBtn');
   const sheet = document.querySelector('.sheet');
-  const nameText = document.querySelector('.head-name').innerText.trim().replace(/\s+/g, '-') || 'Resume';
+  const root = document.documentElement;
+  const wasPdfMode = root.classList.contains('pdf-mode');
 
   const originalLabel = btn.textContent;
-  btn.textContent = 'generating…';
+  btn.textContent = 'preparing…';
   btn.disabled = true;
 
   try {
-    const prevZoom = sheet.style.zoom;
-    const root = document.documentElement;
-    const wasPdfMode = root.classList.contains('pdf-mode');
-    sheet.style.zoom = '1';
+    // Use the browser's print engine so the output is real vector text —
+    // crisp when zoomed and selectable/copyable, unlike the old screenshot PDF.
     root.classList.add('pdf-mode');
 
-    // Let the browser reflow to the desktop layout before capturing.
+    document.title = (document.querySelector('.head-name').innerText.trim() || 'Resume') + '-Resume';
+
+    // Wait for the desktop layout to reflow before opening the print dialog.
     const nextFrame = () => new Promise(res => requestAnimationFrame(() => res()));
     await nextFrame();
     await nextFrame();
 
-    const canvas = await html2canvas(sheet, {
-      scale: sheet.offsetWidth <= 900 ? 2 : 3,
-      useCORS: true,
-      backgroundColor: '#ffffff'
-    });
-
-    sheet.style.zoom = prevZoom;
-    if (!wasPdfMode) root.classList.remove('pdf-mode');
-
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF({ unit: 'in', format: 'letter', orientation: 'portrait' });
-    const pageW = pdf.internal.pageSize.getWidth();
-    const pageH = pdf.internal.pageSize.getHeight();
-
-    // Scale the rendered image to fit within one page — never split across pages.
-    let imgW = pageW;
-    let imgH = (canvas.height * imgW) / canvas.width;
-    if (imgH > pageH) {
-      imgH = pageH;
-      imgW = (canvas.width * imgH) / canvas.height;
-    }
-    const xOffset = (pageW - imgW) / 2;
-    const yOffset = (pageH - imgH) / 2;
-
-    pdf.addImage(canvas.toDataURL('image/jpeg', 0.98), 'JPEG', xOffset, yOffset, imgW, imgH);
-    pdf.save(nameText + '-Resume.pdf');
+    window.print();
   } catch (err) {
-    alert('PDF generation failed — please try again.');
+    alert('Could not open the print dialog — please try again.');
   } finally {
+    if (!wasPdfMode) root.classList.remove('pdf-mode');
     btn.textContent = originalLabel;
     btn.disabled = false;
   }

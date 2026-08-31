@@ -197,13 +197,14 @@
   }
   ul.bullets{
     margin:4px 0 0;
-    padding-left:14px;
+    padding-left:17px;
   }
   ul.bullets li{
-    font-size:10.6px;
-    line-height:1.5;
+    font-size:11px;
+    line-height:1.6;
     color:var(--body);
-    margin-bottom:2px;
+    margin-bottom:5px;
+    padding-left:2px;
     outline:none;
   }
   ul.bullets li::marker{color:var(--muted);}
@@ -517,8 +518,8 @@
   }
 
   /* ---- PDF capture mode ---- */
-  /* Forces the desktop layout when capturing via html2canvas,
-     so mobile users get a correctly-styled PDF. */
+  /* Forces the desktop layout so browsers/mobile render the resume
+     like the desktop version, keeping it consistent on screen and in print. */
   html.pdf-mode, html.pdf-mode body{
     padding:0;
     background:#fff;
@@ -556,6 +557,28 @@
     .toolbar{display:none;}
     .tabs,.portfolio{display:none !important;}
     .portfolio *{display:none !important;}
-    .sheet{box-shadow:none;width:var(--page-w);min-height:var(--page-h);margin:0;zoom:1;}
+    /* Fixed page height + hidden overflow guarantees a single-page PDF. */
+    .sheet{box-shadow:none;width:var(--page-w);height:var(--page-h);overflow:hidden;margin:0;zoom:1;padding:.5in .55in .45in;}
+    /* Force the desktop layout on printed output so mobile users get the same PDF. */
+    .head{flex-direction:row;align-items:flex-end;gap:20px;padding-bottom:8px;margin-bottom:10px;}
+    .head-contact{text-align:right;white-space:nowrap;}
+    .head-name{font-size:27px;}
+    .head-role{font-size:11.5px;}
+    .skill-row{flex-direction:row;gap:10px;margin-bottom:2px;font-size:10.5px;}
+    .skill-row .k{flex:0 0 148px;}
+    .entry-top,.role-top{flex-direction:row;align-items:baseline;gap:10px;}
+    /* Condense spacing and type so the resume fits one page. */
+    .section{margin-bottom:9px;}
+    .sec-title{margin:0 0 5px;}
+    .entry{margin-bottom:7px;}
+    ul.bullets{margin:3px 0 0;padding-left:17px;}
+    ul.bullets li{font-size:10.5px;line-height:1.45;margin-bottom:3px;padding-left:2px;}
+    .entry-title,.role-title{font-size:11px;}
+    .entry-sub{font-size:10px;}
+    .entry-loc{font-size:9.8px;margin-bottom:1px;}
+    .role-block{margin-top:4px;}
+    .role-block + .role-block{margin-top:6px;}
+    .stack-line{font-size:9px;}
+    .summary{font-size:10.5px;line-height:1.4;margin:0 0 10px;}
     [contenteditable="true"]:hover,[contenteditable="true"]:focus{background:none;}
   }

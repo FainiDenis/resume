@@ -7,7 +7,7 @@ An interactive, responsive resume site built with vanilla HTML, CSS, and JavaScr
 ## Features
 
 - **Two tabs** — switch between the **Resume** sheet and the **Portfolio** viewer.
-- **Resume sheet** — a print-ready, letter-sized page with editable text inline and a **Download PDF** button (`html2canvas` + `jsPDF`, single page, no splitting).
+- **Resume sheet** — a print-ready, letter-sized page with editable text inline and a **Download PDF** button (uses the browser's native print-to-PDF, keeping text selectable/crisp).
 - **Portfolio viewer** — a sidebar lists every project and its assignments; documents render as styled Markdown (`marked`) with screenshots in place.
 - **Works offline** — all Markdown content is embedded in `./js/portfolio-data.js` and `marked` is vendored locally, so the page works when opened directly from the file system.
 - **Responsive** — the sidebar collapses to a document picker on small screens.
