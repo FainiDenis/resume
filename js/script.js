@@ -20,9 +20,14 @@ async function downloadResume() {
     await nextFrame();
     await nextFrame();
 
-    window.print();
+    // Print the topmost window so the print dialog targets the full page —
+    // printing from a nested iframe can be blocked in some browsers.
+    const win = (window.top === window) ? window : window.top;
+    win.focus();
+    win.print();
   } catch (err) {
-    alert('Could not open the print dialog — please try again.');
+    // Fall back to a plain print call, which still works when not sandboxed.
+    try { window.print(); } catch (_) {}
   } finally {
     if (!wasPdfMode) root.classList.remove('pdf-mode');
     btn.textContent = originalLabel;
