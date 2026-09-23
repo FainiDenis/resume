@@ -50,6 +50,43 @@ const PORTFOLIO = [
     ]
   },
   {
+    id: 'introduction-to-web-development',
+    title: 'Introduction to Web Development',
+    sub: 'HTML, CSS & web fundamentals',
+    tag: 'coursework',
+    dir: 'showcase/introduction-to-web-development',
+    docs: [
+      { file: 'README.md', label: 'Course Overview' },
+      { file: 'docs/01-coursework-projects.md', label: 'Coursework & Assignments' },
+      { file: 'docs/02-final-personal-profile.md', label: 'Final Project — Personal Profile' }
+    ]
+  },
+  {
+    id: 'web-and-mobile-development',
+    title: 'Web and Mobile Development',
+    sub: 'Web design, front-end fundamentals & research',
+    tag: 'coursework',
+    dir: 'showcase/web-and-mobile-development',
+    docs: [
+      { file: 'README.md', label: 'Course Overview' },
+      { file: 'docs/01-personal-portfolio.md', label: 'Personal Portfolio Project' },
+      { file: 'docs/02-remote-work-collaboration.md', label: 'Remote Work & Collaboration' },
+      { file: 'docs/03-homework-exercises.md', label: 'Homework Exercises' }
+    ]
+  },
+  {
+    id: 'web-and-mobile-development-ii',
+    title: 'Web and Mobile Development II',
+    sub: 'CSS, forms, JavaScript & web projects',
+    tag: 'coursework',
+    dir: 'showcase/web-and-mobile-development-ii',
+    docs: [
+      { file: 'README.md', label: 'Course Overview' },
+      { file: 'docs/01-tanzania-project.md', label: 'Tanzania Mid-Term Project' },
+      { file: 'docs/02-exercises.md', label: 'CSS, Form & JavaScript Exercises' }
+    ]
+  },
+  {
     id: 'client-server-networks',
     title: 'Client-Server Networks',
     sub: 'Windows Server 2012 R2 Administration',

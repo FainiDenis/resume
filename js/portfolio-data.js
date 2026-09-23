@@ -1087,6 +1087,158 @@ Booking confirmation — review the trip, passenger details, and total cost befo
 
 **Design principles we followed** across every screen: clean and simple, consistent patterns, accessible (contrast, screen-reader, keyboard support, dark mode), and responsive across web and mobile.
 `;
+  DATA["showcase/introduction-to-web-development/README.md"] = `# Introduction to Web Development
+
+**Coursework showcase** · [Open the original coursework site](https://people.rit.edu/dtf8841/nact-170/)
+
+---
+
+## What This Coursework Is About
+
+The Introduction to Web Development course introduced the building blocks of a website: how HTML structures content, how CSS presents it, and how common controls such as forms, tables, lists, and images turn a collection of elements into a usable page. The work progressed from small guided pages to a final personal-profile website.
+
+## What I Built
+
+| Project | What it is about | What it demonstrates | Open it |
+|---|---|---|---|
+| Personal homepage | A simple introduction page for the site owner. | HTML document structure, headings, text, links, and CSS. | [Course index](https://people.rit.edu/dtf8841/nact-170/) |
+| Resume | A résumé presenting education, skills, and an academic record. | Page structure, lists, tables, and information hierarchy. | [Homework 2](https://people.rit.edu/dtf8841/nact-170/Homework%202/Resume.html) |
+| Appointment request | A form for requesting an appointment. | Text inputs, radio buttons, checkboxes, availability controls, and a reset action. | [Homework 3](https://people.rit.edu/dtf8841/nact-170/Homework%203/OrderForm.html) |
+| Hobby page | A reading-interest page with supporting images and text. | Semantic content, image placement, typography, and readable layout. | [Homework 4](https://people.rit.edu/dtf8841/nact-170/Homework%204/Hobby.html) |
+| **Final project — Personal profile** | A personal website introducing the developer's background, program, interests, and contact information. | Combining headings, paragraphs, lists, images, links, and basic CSS into a complete page. | [Final project](https://people.rit.edu/dtf8841/nact-170/Final%20Project/index.html) |
+
+## Skills Demonstrated
+
+- Writing clear HTML structure with headings, paragraphs, lists, links, and images.
+- Using CSS to control layout, color, spacing, and visual hierarchy.
+- Creating forms and selecting appropriate controls for different kinds of input.
+- Presenting information in tables and keeping a page easy to scan.
+- Building a complete personal site from a small set of reusable page patterns.
+
+## The Progression
+
+The assignments were intentionally incremental. The early pages focused on individual HTML and CSS techniques; the résumé introduced structured information, the appointment form added interaction through form controls, and the hobby page combined text and imagery. The final project brought those ideas together in a personal profile that could stand on its own as a small website.
+
+See the project notes for more detail:
+
+- [Coursework and assignments](docs/01-coursework-projects.md)
+- [Final project — personal profile](docs/02-final-personal-profile.md)
+`;
+  DATA["showcase/introduction-to-web-development/docs/01-coursework-projects.md"] = `# Coursework and Assignments
+
+The Introduction to Web Development projects form a progression from individual HTML and CSS techniques to a complete personal website. Each assignment uses a small, visible problem so the focus stays on understanding how a browser presents structured content.
+
+## Homework 1 — Personal Homepage
+
+The first homework established the basic shape of a personal page. It introduced the relationship between HTML content and CSS presentation: headings establish hierarchy, paragraphs provide readable text, and links connect the page to other parts of the site.
+
+**What it practices**
+
+- Creating a document with a sensible heading structure.
+- Adding paragraphs, lists, and links.
+- Applying basic CSS for alignment, color, and spacing.
+
+[Open the course coursework index](https://people.rit.edu/dtf8841/nact-170/)
+
+## Homework 2 — Résumé Page
+
+The résumé assignment focused on presenting a substantial amount of information clearly. The page combines education, skills, activities, and an academic record without making the reader search through an unstructured wall of text.
+
+**What it practices**
+
+- Separating content into meaningful sections.
+- Using lists for skills and activities.
+- Using a table for the academic record.
+- Balancing a résumé layout so the important information is easy to scan.
+
+[Open Homework 2 — Résumé](https://people.rit.edu/dtf8841/nact-170/Homework%202/Resume.html)
+
+## Homework 3 — Appointment Request Form
+
+This assignment is a small interface for collecting the information needed to schedule an appointment. It demonstrates that a form is more than a submit button: each control should match the type of information being collected.
+
+**What it practices**
+
+- Text inputs for a name, nickname, email address, phone number, and notes.
+- Radio buttons for choosing a preferred contact method.
+- Checkboxes for selecting available days and a time of day.
+- A clear request action and a way to reset the form.
+
+[Open Homework 3 — Appointment request](https://people.rit.edu/dtf8841/nact-170/Homework%203/OrderForm.html)
+
+## Homework 4 — Hobby Page
+
+The hobby page uses reading as its subject and gives the content visual support through an image. It is a compact example of using typography, spacing, and imagery to make a personal topic more engaging.
+
+**What it practices**
+
+- Organizing a page around a topic and a clear main heading.
+- Combining descriptive text with a relevant image.
+- Using CSS to create a readable, visually balanced layout.
+
+[Open Homework 4 — Hobby page](https://people.rit.edu/dtf8841/nact-170/Homework%204/Hobby.html)
+
+## Final Project — Personal Profile Website
+
+The final project combines the skills from the earlier assignments into a personal-profile site. It introduces the developer, explains the academic program and area of interest, and provides contact information in a consistent visual format.
+
+**What it brings together**
+
+- Semantic headings, paragraphs, lists, and images.
+- A small, coherent CSS style for layout and spacing.
+- A public-facing page that communicates who the developer is and what the site represents.
+
+[Open the final project](https://people.rit.edu/dtf8841/nact-170/Final%20Project/index.html)
+
+---
+
+**Next:** [Final project — personal profile](02-final-personal-profile.md)
+`;
+  DATA["showcase/introduction-to-web-development/docs/02-final-personal-profile.md"] = `# Final Project — Personal Profile Website
+
+[Open the live project](https://people.rit.edu/dtf8841/nact-170/Final%20Project/index.html)
+
+## What the Project Is About
+
+The final project for the Introduction to Web Development course is a small personal-profile website. Its purpose is straightforward: introduce the developer, explain the academic program and area of interest, and make the essential contact information easy to find.
+
+Rather than trying to build a complex application, the project focuses on the fundamentals of presenting information on the web. The page gives each piece of content a clear place and uses a restrained visual style so the reader can understand the profile quickly.
+
+## What a Visitor Can Learn
+
+- Who the developer is and where the profile is based.
+- Which academic program the developer is studying.
+- What subject area the developer is interested in.
+- How to contact the developer directly.
+- Which technologies were used to create the page.
+
+## How It Was Built
+
+The project uses the core technologies covered in the course:
+
+| Layer | Approach |
+|---|---|
+| Content | HTML headings, paragraphs, lists, links, and images |
+| Presentation | Basic CSS for layout, color, spacing, and visual hierarchy |
+| Navigation | Links back to the coursework index and contact address |
+| Media | A portrait and RIT logo used to give the page context |
+
+The important design decision is that the content and presentation are kept understandable. A personal site does not need complicated interaction to be useful; it needs a clear structure, readable content, and a consistent presentation.
+
+## What the Project Demonstrated
+
+- Turning a set of personal facts into a coherent web page.
+- Choosing semantic elements instead of relying only on visual styling.
+- Using CSS to create hierarchy without overwhelming the content.
+- Combining text and images so the page communicates a person, not just a résumé.
+- Completing a small project from initial layout to a publicly viewable result.
+
+## Reflection
+
+This project was an early introduction to the web-development workflow: plan the content, build the page structure, style the result, and then test the links and presentation. Those fundamentals continued to carry into later web and mobile application courses.
+
+**Back to:** [Introduction to Web Development overview](../README.md)
+`;
   DATA["showcase/lan-wan-design/README.md"] = `# LAN/WAN Design
 
 ---
@@ -4582,6 +4734,311 @@ This makes it trivial to **reset a lab environment back to a clean baseline** �
 ---
 
 **Key takeaway:** The user lifecycle — create, manage, and remove — is a perfect candidate for automation because it's repetitive, identical across many records, and unforgiving of manual mistakes. Scripting both directions turns a chore into a single command.
+`;
+  DATA["showcase/web-and-mobile-development/README.md"] = `# Web and Mobile Development
+
+**Coursework showcase** · [Open the original course portfolio](https://people.rit.edu/dtf8841/iste140/)
+
+---
+
+## What This Coursework Is About
+
+The Web and Mobile Development course develops the practical side of web development: turning requirements into pages people can navigate, designing layouts that communicate clearly, and using front-end technologies such as HTML, CSS, JavaScript, and PHP. The course portfolio contains a series of exercises and two larger projects that build on those fundamentals.
+
+## What I Built
+
+| Project | What it is about | What it demonstrates | Open it |
+|---|---|---|---|
+| Personal portfolio | A multi-page personal site with a résumé, education, personal background, and portfolio navigation. | Information architecture, page-to-page navigation, semantic content, and consistent web styling. | [Personal portfolio](https://people.rit.edu/dtf8841/iste140/project1/index.html) |
+| Remote work and collaboration | A research site about how COVID-19 changed remote work, including its benefits, drawbacks, and technology requirements. | Multi-page information design, research synthesis, navigation, and presenting evidence to an audience. | [Remote-work project](https://people.rit.edu/dtf8841/iste140/project2/index.html) |
+| Homework exercises | A sequence of layout, validation, recipe, and Star Wars-themed exercises. | Iterating on a page, fixing markup, working with images, and applying responsive web-design ideas. | [Homework index](https://people.rit.edu/dtf8841/iste140/homework/homework.html) |
+
+## Skills Demonstrated
+
+- Writing and organizing HTML pages with meaningful headings, lists, forms, and links.
+- Using CSS to build page layouts and maintain a consistent visual style.
+- Practicing JavaScript-oriented web interaction alongside the course's HTML and CSS work.
+- Understanding the role of PHP in the broader web-and-mobile application curriculum.
+- Planning a multi-page site around a visitor's path rather than treating each page as an isolated file.
+- Presenting research and personal information in a clear, navigable format.
+
+## Project Themes
+
+The personal portfolio and remote-work site serve different purposes, but both practice the same product thinking: identify the audience, group information into useful pages, and make every section easy to reach. The smaller exercises provide the repetition needed to make those larger structures reliable.
+
+## Read More
+
+- [Personal portfolio project](docs/01-personal-portfolio.md)
+- [Remote work and collaboration project](docs/02-remote-work-collaboration.md)
+- [Homework exercises](docs/03-homework-exercises.md)
+`;
+  DATA["showcase/web-and-mobile-development/docs/01-personal-portfolio.md"] = `# Project 1 — Personal Portfolio
+
+[Open the personal portfolio project](https://people.rit.edu/dtf8841/iste140/project1/index.html)
+
+## What the Project Is About
+
+This project is a personal portfolio website designed to give visitors one place to learn about the developer's education, technical background, experience, and personal interests. Instead of putting everything on one long page, the site splits the information into focused sections that can be reached from a consistent navigation menu.
+
+The project is an early example of content architecture: a visitor should be able to answer “Who is this?”, “What has this person studied?”, and “How can I learn more?” without having to guess where to click.
+
+## Site Structure
+
+| Page | Purpose |
+|---|---|
+| **Home** | Introduces the developer with a short overview and portrait. |
+| **Résumé** | Presents an objective, technical skills, certifications, education, and experience. |
+| **Education** | Summarizes the developer's academic programs, areas of study, and related coursework. |
+| **Personal** | Shares leadership experience, volunteer work, training, and hobbies. |
+| **Portfolio** | Connects the personal site back to the broader coursework and project collection. |
+
+## What It Demonstrates
+
+- Designing a multi-page information architecture.
+- Keeping navigation consistent across pages.
+- Presenting résumé data, education history, and personal information in separate, scannable sections.
+- Combining headings, lists, links, and images to create a coherent personal site.
+- Maintaining a consistent visual identity while allowing each page to focus on a different subject.
+- Using the web as a portfolio rather than only as a collection of isolated assignments.
+
+## Design and Development Notes
+
+The site is intentionally centered on readable content. The résumé page uses lists and headings to make qualifications easy to scan; the education page gives each program room to explain its focus; and the personal page adds context through leadership and hobbies. Images provide visual anchors without carrying information that the text should carry.
+
+The course context also introduced JavaScript and PHP, which later became important for adding interaction and server-side behavior. This project itself focuses on the information-design and front-end foundation.
+
+## Outcome
+
+The completed site demonstrates how a set of personal facts can be shaped into a coherent online identity. It also provides a useful foundation for later work: once the content and navigation are clear, more advanced behavior can be added without losing the user's path through the site.
+
+**Back to:** [Web and Mobile Development overview](../README.md)
+`;
+  DATA["showcase/web-and-mobile-development/docs/02-remote-work-collaboration.md"] = `# Project 2 — Remote Work and Collaboration
+
+[Open the remote-work research project](https://people.rit.edu/dtf8841/iste140/project2/index.html)
+
+## What the Project Is About
+
+This is a research project about the impact of COVID-19 on remote work and collaboration. It examines the transition from an in-office workplace to working from home and organizes the discussion around three questions: what employees gained, what became more difficult, and what technology makes remote work possible.
+
+The project is structured as a small, navigable website rather than a single long article. That choice makes the research easier to explore and gives each theme a clear page.
+
+## Research Structure
+
+| Page | Topic |
+|---|---|
+| **Overview** | Introduces the impact of the pandemic and the shift to remote work. |
+| **Benefits** | Covers reduced stress, more sleep, less exposure to illness, more exercise, and time with family. |
+| **Drawbacks** | Discusses isolation, difficulty switching off, unreliable internet access, and privacy concerns. |
+| **Technology** | Groups remote-work tools into hardware, communication, and cybersecurity categories. |
+| **References** | Lists the outside sources used to support the research. |
+
+## Main Ideas
+
+### Benefits
+
+The project considers how remote work can give employees more control over their schedules. Without a commute and with more flexibility at home, some workers may have more time to sleep, exercise, or spend with family. It also notes the potential for fewer physical interactions during a period of disease transmission.
+
+### Challenges
+
+Remote work also creates practical and human problems. Employees can feel isolated without the informal support of an office, may have difficulty separating work from personal time, and may depend on an internet connection they do not control. The project calls out privacy as another concern when work happens in a personal environment.
+
+### Technology
+
+The technology page divides the requirements into three useful categories:
+
+- **Hardware:** laptops, tablets, smartphones, and reliable internet access.
+- **Communication:** email, chat, video conferencing, and shared file storage.
+- **Cybersecurity:** VPNs and other controls for protecting company data outside the office.
+
+## What the Project Demonstrates
+
+- Turning research into a clear visitor-friendly information architecture.
+- Organizing arguments by theme instead of presenting one undifferentiated block of text.
+- Connecting claims to a references page.
+- Designing a multi-page site with a consistent navigation pattern.
+- Presenting images and text together to support a topic without letting decoration replace evidence.
+
+## Outcome
+
+The project shows how a web page can make a complex subject approachable. The visitor can start with the overview, move to a specific benefit or drawback, learn what technology is involved, and then review the sources behind the discussion.
+
+**Back to:** [Web and Mobile Development overview](../README.md)
+`;
+  DATA["showcase/web-and-mobile-development/docs/03-homework-exercises.md"] = `# Homework Exercises
+
+The Web and Mobile Development homework builds confidence through a sequence of small, visible changes. The exercises start with repairing and refining a page, then move into content-heavy and themed layouts.
+
+## Exercise List
+
+| Exercise | What the project is about | What it practices | Open it |
+|---|---|---|---|
+| Broken page fix | Repairing a page whose structure and content need to be made usable again. | Semantic markup, validation, and debugging a page. | [Broken page fix](https://people.rit.edu/dtf8841/iste140/homework/validated.html) |
+| Homepage 1.0 | A first version of the personal homepage. | Page structure, headings, content, and basic layout. | [Homepage 1.0](https://people.rit.edu/dtf8841/iste140/homework/homepage_1.html) |
+| Homepage 2.0 | A second iteration of the homepage. | Refining content and presentation as the page develops. | [Homepage 2.0](https://people.rit.edu/dtf8841/iste140/homework/homework_2.html) |
+| Homepage 3.0 | The expanded personal homepage. | Bringing sections together into a more complete personal site. | [Homepage 3.0](https://people.rit.edu/dtf8841/iste140/) |
+| Kadayif recipe | A recipe page for a Middle Eastern dessert. | Images, headings, lists, step-by-step instructions, and readable content flow. | [Kadayif recipe](https://people.rit.edu/dtf8841/iste140/homework/recipe.html) |
+| Responsive Star Wars page | A themed page about Darth Vader and the Death Star. | Responsive layout, navigation, images, and visual styling. | [Darth Vader page](https://people.rit.edu/dtf8841/iste140/homework/darth.html) |
+
+## The Progression
+
+The first exercise is about diagnosing what is wrong with an existing page. The homepage revisions then show how a design can evolve through repeated passes instead of being treated as a one-time decision. The recipe introduces a more structured content format, where ingredients and directions need to be easy to scan, while the Star Wars page applies the layout skills to a more playful, image-led subject.
+
+These exercises show that web development is iterative: validate the structure, add the content, style the page, preview the result, and make another pass when the layout or hierarchy needs improvement.
+
+**Back to:** [Web and Mobile Development overview](../README.md)
+`;
+  DATA["showcase/web-and-mobile-development-ii/README.md"] = `# Web and Mobile Development II
+
+**Coursework showcase** · [Open the original course portfolio](https://people.rit.edu/dtf8841/iste240/)
+
+---
+
+## What This Coursework Is About
+
+Web and Mobile Development II builds on the web foundations from Web and Mobile Development with a second set of exercises and a larger content project. The work moves through CSS layout, form design, and JavaScript behavior, then applies those skills to a multi-page website about Tanzania.
+
+The course portfolio is a practical progression: first make the page lay out correctly, then collect structured input, then add behavior that responds to a visitor's actions.
+
+## What I Built
+
+| Project | What it is about | What it demonstrates | Open it |
+|---|---|---|---|
+| Tanzania mid-term project | A small tourism and culture website presenting Tanzania through its language, food, places, and history. | Multi-page navigation, content organization, images, links, and a visitor feedback form. | [Tanzania project](https://people.rit.edu/dtf8841/iste240/project1/index.html) |
+| CSS and form exercises | Pages focused on flowers and CSS boxes, followed by a national-park visitor form. | Layout, form controls, labels, required fields, and usable input design. | [Exercise 2](https://people.rit.edu/dtf8841/iste240/exer/ex02.html) · [Exercise 3](https://people.rit.edu/dtf8841/iste240/exer/ex03.html) |
+| JavaScript exercises | A set of small interactions including style changes, form handling, color selection, mouse events, and simple calculations. | Event handling, DOM updates, input processing, and interactive feedback. | [Exercise 4](https://people.rit.edu/dtf8841/iste240/exer/ex04/ex04.html) · [Exercise 5](https://people.rit.edu/dtf8841/iste240/exer/ex05/ex05.html) |
+
+## Skills Demonstrated
+
+- Applying CSS to arrange content and create a consistent page structure.
+- Designing forms with appropriate controls, labels, and required fields.
+- Using JavaScript events to respond to clicks, mouse movement, form input, and color selection.
+- Connecting interaction to visible changes in the page.
+- Building a multi-page information site around a clear visitor journey.
+- Organizing cultural, geographic, and historical content in a way that is easy to browse.
+
+## The Larger Project
+
+The Tanzania project is the centerpiece of the course portfolio. It is not just a single page: it is a small site with dedicated areas for culture, food, places, a gallery, and feedback. That structure gives each subject enough room to stand on its own while keeping the larger experience coherent.
+
+The original course site also links to a PHP version, reflecting the server-side side of the course material. The showcase focuses on the visible project and the web-development decisions behind it.
+
+## Read More
+
+- [Tanzania mid-term project](docs/01-tanzania-project.md)
+- [CSS, form, and JavaScript exercises](docs/02-exercises.md)
+`;
+  DATA["showcase/web-and-mobile-development-ii/docs/01-tanzania-project.md"] = `# Mid-Term Project — Tanzania Website
+
+[Open the live Tanzania project](https://people.rit.edu/dtf8841/iste240/project1/index.html)
+
+## What the Project Is About
+
+The Tanzania mid-term project is a small, multi-page website that introduces Tanzania as a travel and cultural destination. It gives visitors a friendly starting point for learning about the country, then lets them explore the subject through separate pages instead of placing everything on a single long page.
+
+The site combines practical travel information with cultural context. Its goal is to be approachable and easy to navigate while presenting enough detail to encourage a visitor to continue exploring.
+
+## Information Architecture
+
+| Page | What visitors can find |
+|---|---|
+| **Home** | An introduction to Tanzania, its location, the origin of the country's name, and the meaning of “Hakuna Matata.” |
+| **Culture and language** | Information about Tanzania's official languages, including Swahili and English, and how they are used. |
+| **Food** | Descriptions of foods such as vitumbua, ugali, and nyama choma. |
+| **Place** | Travel attractions including Mount Kilimanjaro, Zanzibar, and Serengeti National Park. |
+| **Gallery** | A visual collection supporting the written descriptions. |
+| **Feedback** | A form for visitors to share information about their visit and rate the experience. |
+
+## What the Project Does
+
+- Introduces Tanzania with a short, readable overview.
+- Connects the overview to a map so visitors can place the country geographically.
+- Explains how the name Tanzania was formed from Tanganyika and Zanzibar.
+- Presents culture, language, food, and destinations as separate topics.
+- Uses supporting images to give visitors a visual entry point into each subject.
+- Provides a feedback page with fields for a visitor's name, group size, visit date, favorite place, and overall rating.
+- Keeps navigation consistent so a visitor can move between topics and return to the home page.
+
+## Development Notes
+
+The project uses the front-end concepts covered in the course:
+
+| Concern | How the project addresses it |
+|---|---|
+| Structure | Separate pages keep each topic focused and easy to link to. |
+| Styling | A shared visual system ties the logo, navigation, headings, and content together. |
+| Content | Text and images are paired so each destination or cultural topic has context. |
+| Forms | The feedback page models labeled inputs and selectable choices for collecting visitor data. |
+| Navigation | Repeated links make the site feel like one application rather than a folder of unrelated pages. |
+| Server-side context | The original coursework site also includes a PHP version of the project. |
+
+## What the Project Demonstrated
+
+A useful website is not only a collection of attractive pages; it is a set of connected decisions about what to show, where to put it, and how a visitor should move through it. This project shows how those decisions work together when the subject is personal and the audience is a prospective visitor rather than a fellow developer.
+
+**Back to:** [Web and Mobile Development II overview](../README.md)
+`;
+  DATA["showcase/web-and-mobile-development-ii/docs/02-exercises.md"] = `# CSS, Form, and JavaScript Exercises
+
+The Web and Mobile Development II exercises build interaction in layers. The first pages focus on layout and form design; the later pages use JavaScript to make the page respond to a visitor.
+
+## Exercise 2 — Flowers and CSS Boxes
+
+The second exercise is a visual layout study built around flowers and CSS boxes. The point is to practice positioning content and understanding how box-related properties affect the space a page element occupies.
+
+**What it practices**
+
+- Applying CSS to create and arrange visible boxes.
+- Thinking about spacing, dimensions, and layout relationships.
+- Building a small visual composition from simple page elements.
+
+[Open Exercise 2](https://people.rit.edu/dtf8841/iste240/exer/ex02.html)
+
+## Exercise 3 — National Park Visitor Form
+
+The third exercise presents a visitor form for a national-park tourism experience. It asks for a visitor's name, group size, visit date, favorite park, and overall rating, using controls suited to each kind of answer.
+
+**What it practices**
+
+- Labeling fields so the form is understandable.
+- Using text inputs for names, numbers, and dates.
+- Using a select-like list of favorite locations.
+- Using radio controls for a single overall rating.
+- Providing a clear submit action and required-field cues.
+
+[Open Exercise 3](https://people.rit.edu/dtf8841/iste240/exer/ex03.html)
+
+## Exercise 4 — JavaScript Fundamentals
+
+Exercise 4 is a collection of small interactions rather than one large application. Together, the exercises demonstrate several ways JavaScript can respond to a page:
+
+- Changing a paragraph's style when a button is clicked.
+- Handling first and last name input through a form.
+- Displaying color options and reacting to a selection.
+- Changing text color on mouseover.
+- Performing simple divide and multiply calculations and displaying the answer.
+
+[Open Exercise 4](https://people.rit.edu/dtf8841/iste240/exer/ex04/ex04.html)
+
+## Exercise 5 — More JavaScript Interaction
+
+Exercise 5 revisits the same interaction ideas with another set of examples. The repetition is useful: the same event-driven model appears while the page context and visible results change.
+
+**What it reinforces**
+
+- Moving or changing text in response to a button.
+- Counting or checking user input.
+- Updating the available color choices.
+- Responding to mouse movement.
+- Calculating and displaying arithmetic results.
+
+[Open Exercise 5](https://people.rit.edu/dtf8841/iste240/exer/ex05/ex05.html)
+
+## The Progression
+
+The exercises move from **presenting** content, to **collecting** structured input, to **reacting** to user actions. That sequence is a practical introduction to front-end application behavior: define the page, define the data it needs, and then use JavaScript to make the experience respond.
+
+**Back to:** [Web and Mobile Development II overview](../README.md)
 `;
   return DATA;
 })();
